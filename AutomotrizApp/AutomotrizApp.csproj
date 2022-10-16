@@ -52,11 +52,17 @@
     <Compile Include="dominio\Detalle.cs" />
     <Compile Include="dominio\Pedido.cs" />
     <Compile Include="dominio\Producto.cs" />
-    <Compile Include="presentacion\Form1.cs">
+    <Compile Include="presentacion\FrmNuevoPedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="presentacion\Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="presentacion\FrmNuevoPedido.Designer.cs">
+      <DependentUpon>FrmNuevoPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="presentacion\FrmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="presentacion\FrmHome.Designer.cs">
+      <DependentUpon>FrmHome.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -64,6 +70,12 @@
     <Compile Include="servicios\FabricaServicioImp.cs" />
     <Compile Include="servicios\implementaciones\Servicio.cs" />
     <Compile Include="servicios\interfaces\IServicio.cs" />
+    <EmbeddedResource Include="presentacion\FrmNuevoPedido.resx">
+      <DependentUpon>FrmNuevoPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="presentacion\FrmHome.resx">
+      <DependentUpon>FrmHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
