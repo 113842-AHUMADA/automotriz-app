@@ -22,7 +22,8 @@ namespace AutomotrizApp.datos.implementaciones
                 prod.Id_Producto = (int)fila["id_producto"];
                 prod.Descripcion = fila["descripcion"].ToString();
                 prod.Anio = (int)fila["anio"];
-                prod.Precio_Vta = (double)fila["precio_vta"];
+                prod.Precio_Vta = Convert.ToDouble(fila["precio_vta"]);
+                prod.Marca = fila["marca"].ToString();
                 lista.Add(prod);
             }
             return lista;

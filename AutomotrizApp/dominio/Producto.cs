@@ -14,8 +14,9 @@ namespace AutomotrizApp.dominio
 
         //public bool Stock { get; set; }
         public double Precio_Vta { get; set; }
-        public int Id_marca { get; set; }
-        public int Id_Tipo_Producto { get; set; }
+        public string Marca { get; set; }
+
+        //public int Id_Tipo_Producto { get; set; }
 
     }
 }
