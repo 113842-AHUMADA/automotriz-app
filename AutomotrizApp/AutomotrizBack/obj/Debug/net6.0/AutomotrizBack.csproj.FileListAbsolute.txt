@@ -1,0 +1,5 @@
+C:\AHUFEDE\COPIAS\automotriz-app-19-10-2022\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.AssemblyReference.cache
+C:\AHUFEDE\COPIAS\automotriz-app-19-10-2022\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.GeneratedMSBuildEditorConfig.editorconfig
+C:\AHUFEDE\COPIAS\automotriz-app-19-10-2022\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.AssemblyInfoInputs.cache
+C:\AHUFEDE\COPIAS\automotriz-app-19-10-2022\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.AssemblyInfo.cs
+C:\AHUFEDE\COPIAS\automotriz-app-19-10-2022\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.CoreCompileInputs.cache
