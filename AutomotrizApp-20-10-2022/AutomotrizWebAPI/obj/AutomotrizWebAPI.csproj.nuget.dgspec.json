@@ -1,0 +1,137 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\AHUFEDE\\COPIAS\\AutomotrizApp - 20-10-2022\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\AHUFEDE\\COPIAS\\AutomotrizApp - 20-10-2022\\AutomotrizBack\\AutomotrizBack.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp - 20-10-2022\\AutomotrizBack\\AutomotrizBack.csproj",
+        "projectName": "AutomotrizBack",
+        "projectPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp - 20-10-2022\\AutomotrizBack\\AutomotrizBack.csproj",
+        "packagesPath": "C:\\Users\\ahufe\\.nuget\\packages\\",
+        "outputPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp - 20-10-2022\\AutomotrizBack\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ahufe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\AHUFEDE\\COPIAS\\AutomotrizApp - 20-10-2022\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp - 20-10-2022\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
+        "projectName": "AutomotrizWebAPI",
+        "projectPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp - 20-10-2022\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
+        "packagesPath": "C:\\Users\\ahufe\\.nuget\\packages\\",
+        "outputPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp - 20-10-2022\\AutomotrizWebAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\ahufe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\AHUFEDE\\COPIAS\\AutomotrizApp - 20-10-2022\\AutomotrizBack\\AutomotrizBack.csproj": {
+                "projectPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp - 20-10-2022\\AutomotrizBack\\AutomotrizBack.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
