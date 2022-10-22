@@ -332,6 +332,7 @@
             this.Name = "FrmNuevoPedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AUTOMOTRIZ APP";
+            this.Load += new System.EventHandler(this.FrmNuevoPedido_Load);
             this.grupo_Nuevo_Presupuesto.ResumeLayout(false);
             this.grupo_Nuevo_Presupuesto.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();

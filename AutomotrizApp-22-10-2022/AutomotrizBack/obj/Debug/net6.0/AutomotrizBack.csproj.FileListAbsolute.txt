@@ -27,3 +27,15 @@ C:\AHUFEDE\COPIAS\AutomotrizApp-21-10-2022\AutomotrizBack\obj\Debug\net6.0\Autom
 C:\AHUFEDE\COPIAS\AutomotrizApp-21-10-2022\AutomotrizBack\obj\Debug\net6.0\refint\AutomotrizBack.dll
 C:\AHUFEDE\COPIAS\AutomotrizApp-21-10-2022\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.pdb
 C:\AHUFEDE\COPIAS\AutomotrizApp-21-10-2022\AutomotrizBack\obj\Debug\net6.0\ref\AutomotrizBack.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizBack\bin\Debug\net6.0\AutomotrizBack.deps.json
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizBack\bin\Debug\net6.0\AutomotrizBack.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizBack\bin\Debug\net6.0\AutomotrizBack.pdb
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.AssemblyReference.cache
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.GeneratedMSBuildEditorConfig.editorconfig
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.AssemblyInfoInputs.cache
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.AssemblyInfo.cs
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.CoreCompileInputs.cache
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizBack\obj\Debug\net6.0\refint\AutomotrizBack.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.pdb
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizBack\obj\Debug\net6.0\ref\AutomotrizBack.dll

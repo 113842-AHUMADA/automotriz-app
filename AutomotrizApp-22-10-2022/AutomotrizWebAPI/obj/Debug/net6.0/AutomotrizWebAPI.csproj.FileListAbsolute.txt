@@ -33,3 +33,38 @@ C:\AHUFEDE\COPIAS\AutomotrizApp-21-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\ref
 C:\AHUFEDE\COPIAS\AutomotrizApp-21-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.pdb
 C:\AHUFEDE\COPIAS\AutomotrizApp-21-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.genruntimeconfig.cache
 C:\AHUFEDE\COPIAS\AutomotrizApp-21-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\ref\AutomotrizWebAPI.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\appsettings.Development.json
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\appsettings.json
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\AutomotrizWebAPI.exe
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\AutomotrizWebAPI.deps.json
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\AutomotrizWebAPI.runtimeconfig.json
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\AutomotrizWebAPI.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\AutomotrizWebAPI.pdb
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\AutomotrizBack.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\bin\Debug\net6.0\AutomotrizBack.pdb
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.csproj.AssemblyReference.cache
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.AssemblyInfoInputs.cache
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.AssemblyInfo.cs
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.csproj.CoreCompileInputs.cache
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\staticwebassets.build.json
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\staticwebassets.development.json
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\scopedcss\bundle\AutomotrizWebAPI.styles.css
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.csproj.CopyComplete
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\refint\AutomotrizWebAPI.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.pdb
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.genruntimeconfig.cache
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp-22-10-2022\AutomotrizWebAPI\obj\Debug\net6.0\ref\AutomotrizWebAPI.dll
