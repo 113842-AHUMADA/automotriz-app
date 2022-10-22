@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizFront\\AutomotrizFront.csproj",
+      "projectUniqueName": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp-22-10-2022\\AutomotrizFront\\AutomotrizFront.csproj",
       "projectName": "AutomotrizFront",
-      "projectPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizFront\\AutomotrizFront.csproj",
+      "projectPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp-22-10-2022\\AutomotrizFront\\AutomotrizFront.csproj",
       "packagesPath": "C:\\Users\\ahufe\\.nuget\\packages\\",
-      "outputPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizFront\\obj\\",
+      "outputPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp-22-10-2022\\AutomotrizFront\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahufe\\AppData\\Roaming\\NuGet\\NuGet.Config",

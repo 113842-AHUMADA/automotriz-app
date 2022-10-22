@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "UdZjat6BkAxWbVVavVYIotu30osaPdCFnE70Z8tJ1xPfv0OZAfWEgWeQIkMuI1BB1ndZEfKob2ekU8Zb5plJlg==",
+  "dgSpecHash": "p0bdp8nEYlNqKE/zAFMV5nmmO1f891RWRR+2rXcVCmSdbayfghn+jJDayN+GjJht49mBXh3hSDl3h/XhtbmZCQ==",
   "success": true,
-  "projectFilePath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
+  "projectFilePath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp-22-10-2022\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahufe\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\ahufe\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
