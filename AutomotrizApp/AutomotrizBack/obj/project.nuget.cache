@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "K6PDK7GByd1yummQpIRPar2oqSsngL6+EVeK4dPdjho9U29s1UOS9Kz/EqMmfWLxCcmyc7kswvEV4GcnUfhNiA==",
+  "dgSpecHash": "89RtT9SqsStN433Ohf2N8zJtVzVPfniQezhZOaWGTV4WUmqnj/7PZDJl415X0lcEzRh5qX3V5zbxfFLUbzz2oA==",
   "success": true,
-  "projectFilePath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizBack\\AutomotrizBack.csproj",
+  "projectFilePath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ahufe\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\ahufe\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",

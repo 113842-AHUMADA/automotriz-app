@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using AutomotrizBack.datos;
 
 namespace AutomotrizApp.datos
 {
@@ -28,6 +29,11 @@ namespace AutomotrizApp.datos
             return instancia;
         }
 
+        public SqlConnection ObtenerConexion()
+        {
+            return this.conexion;
+        }
+
         public DataTable Consultar(string nombreSP)
         {
             DataTable tabla = new DataTable();
@@ -44,7 +50,7 @@ namespace AutomotrizApp.datos
             return tabla;
         }
 
-        public bool CrearDetallePedido(string maestroSP, string detalleSP, Pedido oPedido)
+        internal bool Ejecutar(string sp, List<Parametro> lst)
         {
             bool respuesta = false;
             SqlTransaction transaccion = null;
@@ -53,46 +59,35 @@ namespace AutomotrizApp.datos
             {
                 conexion.Open();
                 transaccion = conexion.BeginTransaction();
+                SqlCommand cmd = new SqlCommand(sp,conexion,transaccion);
+                cmd.CommandType = CommandType.StoredProcedure;
 
-                SqlCommand cmdMaestro = new SqlCommand(maestroSP, conexion, transaccion);
-                cmdMaestro.CommandType = CommandType.StoredProcedure;
-                cmdMaestro.Parameters.AddWithValue("@empleado", oPedido.Empleado);
-                cmdMaestro.Parameters.AddWithValue("@cliente", oPedido.Cliente);
-                cmdMaestro.Parameters.AddWithValue("@fecha_entrega", oPedido.Fecha_Entrega);
-
-                SqlParameter parametro = new SqlParameter("@id_pedido", SqlDbType.Int);
-                parametro.Direction = ParameterDirection.Output;
-                cmdMaestro.Parameters.Add(parametro);
-                cmdMaestro.ExecuteNonQuery();
-
-                int idPedido = Convert.ToInt32(parametro.Value);
-
-                foreach (Detalle item in oPedido.lstDetalle)
+                if (lst != null)
                 {
-                    SqlCommand cmdDetalle = new SqlCommand(detalleSP, conexion, transaccion);
-                    cmdDetalle.CommandType = CommandType.StoredProcedure;
-                    cmdDetalle.Parameters.AddWithValue("@id_pedido", idPedido);
-                    cmdDetalle.Parameters.AddWithValue("@id_producto", item.Producto.Id_Producto);
-                    cmdDetalle.Parameters.AddWithValue("@precio_unitario", item.Producto.Precio_Vta);
-                    cmdDetalle.Parameters.AddWithValue("@cantidad", item.Cantidad);
-                    cmdDetalle.ExecuteNonQuery();
+                    foreach (Parametro param in lst)
+                    {
+                        cmd.Parameters.AddWithValue(param.Clave, param.Valor);
+                    }
                 }
 
+                cmd.ExecuteNonQuery();
+                
                 transaccion.Commit();
                 respuesta = true;
             }
-            catch (SqlException)
+            catch (Exception)
             {
-                if (transaccion != null)
-                    transaccion.Rollback();
+                if(conexion!=null)
+                transaccion.Rollback();
+               
             }
             finally
             {
-                if (conexion != null && conexion.State == ConnectionState.Open)
-                    conexion.Close();
+                if (conexion != null && conexion.State == ConnectionState.Open )
+                conexion.Close();
             }
-            return respuesta;
 
+            return respuesta;
         }
     }
 }

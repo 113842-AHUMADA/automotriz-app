@@ -475,11 +475,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizBack\\AutomotrizBack.csproj",
+      "projectUniqueName": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
       "projectName": "AutomotrizBack",
-      "projectPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizBack\\AutomotrizBack.csproj",
+      "projectPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
       "packagesPath": "C:\\Users\\ahufe\\.nuget\\packages\\",
-      "outputPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizBack\\obj\\",
+      "outputPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahufe\\AppData\\Roaming\\NuGet\\NuGet.Config",

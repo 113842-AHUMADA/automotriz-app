@@ -4,6 +4,7 @@ using AutomotrizApp.dominio;
 using AutomotrizBack.negocio.interfaces;
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,6 +28,31 @@ namespace AutomotrizBack.negocio.implementaciones
         public bool CrearPedido(Pedido oPedido)
         {
             return oDao.Create(oPedido);
+        }
+
+        public bool ActualizarPedido(Pedido oPedido)
+        {
+            return oDao.Update(oPedido);
+        }
+
+        public bool BorrarPedido(int id)
+        {
+            return oDao.Delete(id);
+        }
+
+        public List<Pedido> ObtenerPedidosPorFiltro(DateTime desde, DateTime hasta, string cliente)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Pedido ObtenerPedidoPorId(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public DataTable ObtenerReporteProductos(DateTime desde, DateTime hasta)
+        {
+            throw new NotImplementedException();
         }
     }
 }
