@@ -24,6 +24,7 @@ empleado			varchar(100) NOT NULL,
 cliente				varchar(100) NOT NULL,
 fecha_pedido		datetime NOT NULL,
 fecha_entrega		datetime NOT NULL,
+fecha_baja			datetime,
 	CONSTRAINT pk_pedidos PRIMARY KEY (id_pedido)
 );
 
@@ -76,17 +77,39 @@ create procedure SP_INSERTAR_PEDIDOS
 	@fecha_entrega datetime
 as
 begin
-	insert into pedidos (empleado,cliente,fecha_pedido,fecha_entrega)
-	values (@empleado,@cliente,getdate(),@fecha_entrega);
+	insert into pedidos (empleado,cliente,fecha_pedido,fecha_entrega,fecha_baja)
+	values (@empleado,@cliente,getdate(),@fecha_entrega,null);
 	set @id_pedido = scope_identity()
 end;
 
 -----------------------------------------
 -----------------------------------------
 
+create procedure SP_ACTUALIZAR_PEDIDOS
+	@empleado varchar(200), 
+	@cliente varchar(200),
+	@fecha_entrega datetime,
+	@id_pedido int output
+as
+begin
+	update pedidos set empleado = @empleado, cliente = @cliente, fecha_pedido = getdate(), 
+	fecha_entrega = @fecha_entrega, fecha_baja = null
+	where id_pedido = @id_pedido;
+	
+	delete detalles
+	where id_pedido = @id_pedido;
+end;
 
+-----------------------------------------
+-----------------------------------------
 
-
+create procedure SP_ELIMINAR_PEDIDOS
+	@id_pedido int
+as
+begin
+	UPDATE pedidos SET fecha_baja = GETDATE() 
+	where @id_pedido = id_pedido;
+end;
 
 
 
