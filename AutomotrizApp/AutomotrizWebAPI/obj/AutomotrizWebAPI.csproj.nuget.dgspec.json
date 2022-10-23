@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj": {}
+    "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizBack\\AutomotrizBack.csproj": {
+    "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizBack\\AutomotrizBack.csproj",
+        "projectUniqueName": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
         "projectName": "AutomotrizBack",
-        "projectPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizBack\\AutomotrizBack.csproj",
+        "projectPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
         "packagesPath": "C:\\Users\\ahufe\\.nuget\\packages\\",
-        "outputPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizBack\\obj\\",
+        "outputPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahufe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -65,14 +65,14 @@
         }
       }
     },
-    "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj": {
+    "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
+        "projectUniqueName": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
         "projectName": "AutomotrizWebAPI",
-        "projectPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
+        "projectPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
         "packagesPath": "C:\\Users\\ahufe\\.nuget\\packages\\",
-        "outputPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizWebAPI\\obj\\",
+        "outputPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahufe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -89,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizBack\\AutomotrizBack.csproj": {
-                "projectPath": "C:\\AHUFEDE\\COPIAS\\AutomotrizApp-21-10-2022\\AutomotrizBack\\AutomotrizBack.csproj"
+              "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
+                "projectPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj"
               }
             }
           }
