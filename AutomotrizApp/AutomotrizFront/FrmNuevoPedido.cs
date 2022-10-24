@@ -26,12 +26,9 @@ namespace AutomotrizFront
 
         private async Task CargarComboAsync()
         {
-            HttpClient client = new HttpClient();
-            var result = await client.GetAsync("http://localhost:5008/api/Pedido/productos");
+            var result = await ClienteSingleton.ObtenerInstancia().GetAsync("http://localhost:5008/api/Pedido/productos");
 
-            string body = await result.Content.ReadAsStringAsync();
-            List<Producto> lst = JsonConvert.DeserializeObject<List<Producto>>(body);
-
+            List<Producto> lst = JsonConvert.DeserializeObject<List<Producto>>(result);
             cboProductos.DataSource = lst;
             cboProductos.DisplayMember = "Descripcion";
             cboProductos.ValueMember = "Id_producto";
