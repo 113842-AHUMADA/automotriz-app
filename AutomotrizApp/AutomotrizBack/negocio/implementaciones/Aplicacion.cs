@@ -54,5 +54,10 @@ namespace AutomotrizBack.negocio.implementaciones
         {
             throw new NotImplementedException();
         }
+
+        public string Login(string usuario, string password)
+        {
+            return oDao.Login(usuario, password);  
+        }
     }
 }

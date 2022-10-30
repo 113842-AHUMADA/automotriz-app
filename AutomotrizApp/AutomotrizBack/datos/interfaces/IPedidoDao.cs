@@ -24,5 +24,6 @@ namespace AutomotrizApp.datos.interfaces
 
         DataTable GetReporteProductos(DateTime desde, DateTime hasta);
 
+        string Login(string usuario, string password);
     }
 }

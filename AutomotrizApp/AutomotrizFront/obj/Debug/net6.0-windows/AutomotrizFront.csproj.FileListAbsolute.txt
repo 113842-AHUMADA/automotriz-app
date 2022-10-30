@@ -111,3 +111,4 @@ C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico fin
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.pdb
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.genruntimeconfig.cache
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\ref\AutomotrizFront.dll
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.FrmLogin.resources

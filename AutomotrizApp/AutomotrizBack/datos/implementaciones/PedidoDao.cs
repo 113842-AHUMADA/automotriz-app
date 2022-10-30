@@ -12,7 +12,7 @@ using System.Transactions;
 
 namespace AutomotrizApp.datos.implementaciones
 {
-     class PedidoDao : IPedidoDao
+    class PedidoDao : IPedidoDao
     {
         public List<Producto> GetProductos()
         {
@@ -28,7 +28,7 @@ namespace AutomotrizApp.datos.implementaciones
                 prod.Anio = (int)fila["anio"];
                 prod.Stock = (bool)fila["stock"];
                 prod.Precio_Vta = Convert.ToDouble(fila["precio_vta"]);
-                
+
                 lista.Add(prod);
             }
             return lista;
@@ -93,7 +93,7 @@ namespace AutomotrizApp.datos.implementaciones
             SqlTransaction transaccion = null;
 
             try
-            {                
+            {
                 conexion.Open();
                 transaccion = conexion.BeginTransaction();
 
@@ -158,6 +158,42 @@ namespace AutomotrizApp.datos.implementaciones
         public DataTable GetReporteProductos(DateTime desde, DateTime hasta)
         {
             throw new NotImplementedException();
+        }
+
+        public string Login(string usuario, string password){
+
+            string respuesta = "";
+            SqlConnection conexion = HelperDao.ObtenerInstancia().ObtenerConexion();
+            
+            try
+            {
+                conexion.Open();
+                
+
+                SqlCommand cmdLogin = new SqlCommand("SP_INGRESAR", conexion);
+                cmdLogin.CommandType = CommandType.StoredProcedure;
+                cmdLogin.Parameters.AddWithValue("@usuario", usuario);
+                cmdLogin.Parameters.AddWithValue("@contrasenia", password);
+
+                SqlParameter parametro = new SqlParameter("@privilegio", SqlDbType.VarChar,20);
+                parametro.Direction = ParameterDirection.Output;
+                cmdLogin.Parameters.Add(parametro);
+                cmdLogin.ExecuteNonQuery();
+
+
+
+                if (parametro.Value.ToString() == "")
+                    respuesta = "Usuario Incorrecto";
+                else
+                {
+                    respuesta = parametro.Value.ToString()!;
+                }
+            }
+            catch (SqlException ex)
+            {
+                return "Ocurrió un error al conectarse a la base de datos. " + ex.Message;
+            }
+            return respuesta;
         }
     }
 }

@@ -10,6 +10,8 @@ namespace AutomotrizFront
     {
         private static ClienteSingleton instancia;
         private HttpClient client;
+        public string PrivilegioUsuario = "";
+        public string nombreUsuario = "";
 
         private ClienteSingleton() 
         {
