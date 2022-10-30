@@ -10,6 +10,7 @@ CREATE TABLE CREDENCIALES(
 id_credencial	int IDENTITY(1,1),
 usuario			varchar(100) NOT NULL,
 contrasenia		varchar(100) NOT NULL,	
+privilegio      varchar(20)  NOT NULL,
 	CONSTRAINT pk_credenciales PRIMARY KEY (id_credencial)
 );
 
@@ -138,8 +139,8 @@ end;
 
 
 --CREDENCIALES
-INSERT INTO CREDENCIALES (usuario,contrasenia) VALUES ('admin','admin');
-INSERT INTO CREDENCIALES (usuario,contrasenia) VALUES ('empleado','empleado');
+INSERT INTO CREDENCIALES (usuario,contrasenia,privilegio) VALUES ('admin','admin','administrador');
+INSERT INTO CREDENCIALES (usuario,contrasenia,privilegio) VALUES ('vendedor','vendedor','empleado');
 
 --PRODUCTOS
 INSERT INTO PRODUCTOS(marca,modelo,descripcion,color,anio,stock,stock_critico,precio_vta) VALUES ('FIAT','600','3 PUERTAS','DORADO','2022',10,1,9000);
