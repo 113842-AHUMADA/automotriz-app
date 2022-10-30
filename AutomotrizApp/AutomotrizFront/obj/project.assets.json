@@ -529,19 +529,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\indi-\\.nuget\\packages\\": {}
+    "C:\\Users\\Vaio\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizFront\\AutomotrizFront.csproj",
+      "projectUniqueName": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizFront\\AutomotrizFront.csproj",
       "projectName": "AutomotrizFront",
-      "projectPath": "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizFront\\AutomotrizFront.csproj",
-      "packagesPath": "C:\\Users\\indi-\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizFront\\obj\\",
+      "projectPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizFront\\AutomotrizFront.csproj",
+      "packagesPath": "C:\\Users\\Vaio\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizFront\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\indi-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vaio\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -555,8 +555,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
-              "projectPath": "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj"
+            "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
+              "projectPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj"
             }
           }
         }

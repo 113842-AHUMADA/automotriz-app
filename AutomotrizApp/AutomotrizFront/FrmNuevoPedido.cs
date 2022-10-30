@@ -21,8 +21,7 @@ namespace AutomotrizFront
 
         private async void FrmNuevoPedido_Load(object sender, EventArgs e)
         {
-            await CargarComboAsync()
-                ;
+            await CargarComboAsync();
         }
 
         private async Task CargarComboAsync()

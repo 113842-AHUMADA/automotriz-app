@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using AutomotrizBack.datos;
+using System.ComponentModel;
 
 namespace AutomotrizApp.datos
 {
@@ -17,7 +18,7 @@ namespace AutomotrizApp.datos
 
         private HelperDao()
         {
-            conexion = new SqlConnection("Data Source=DESKTOP-R46G6B5\\SQLEXPRESS;Initial Catalog=AUTOMOTRIZPROG;Integrated Security=True");
+            conexion = new SqlConnection(AutomotrizBack.Properties.Resources.ConnectionString);
         }
 
         public static HelperDao ObtenerInstancia()

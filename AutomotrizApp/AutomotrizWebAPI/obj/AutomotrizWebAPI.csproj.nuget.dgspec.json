@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj": {}
+    "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
+    "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
+        "projectUniqueName": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
         "projectName": "AutomotrizBack",
-        "projectPath": "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
-        "packagesPath": "C:\\Users\\indi-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\obj\\",
+        "projectPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
+        "packagesPath": "C:\\Users\\Vaio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\indi-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vaio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -65,17 +65,17 @@
         }
       }
     },
-    "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj": {
+    "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
         "projectName": "AutomotrizWebAPI",
-        "projectPath": "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
-        "packagesPath": "C:\\Users\\indi-\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\obj\\",
+        "projectPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
+        "packagesPath": "C:\\Users\\Vaio\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\indi-\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vaio\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -89,8 +89,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
-                "projectPath": "C:\\Users\\indi-\\Desktop\\TECPROGRAMACION\\PROGII\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj"
+              "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
+                "projectPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj"
               }
             }
           }
