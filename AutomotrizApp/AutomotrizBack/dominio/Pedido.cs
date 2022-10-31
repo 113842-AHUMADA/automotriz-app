@@ -8,7 +8,7 @@ namespace AutomotrizApp.dominio
 {
     public class Pedido
     {
-        public string Empleado { get; set; }
+        public string Vendedor { get; set; }
         public string Cliente { get; set; }
         public DateTime Fecha_Entrega { get; set; }
         public List<Detalle> lstDetalle { get; set; }

@@ -17,16 +17,19 @@ namespace AutomotrizApp.datos.implementaciones
         public List<Producto> GetProductos()
         {
             List<Producto> lista = new List<Producto>();
-            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_CONSULTAR_PRODUCTOS");
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_CONSULTAR_PRODUCTOS",null);
 
             foreach (DataRow fila in tabla.Rows)
             {
                 Producto prod = new Producto();
                 prod.Id_Producto = (int)fila["id_producto"];
                 prod.Marca = fila["marca"].ToString();
+                prod.Modelo = fila["modelo"].ToString();
                 prod.Descripcion = fila["descripcion"].ToString();
+                prod.Color = fila["color"].ToString();
                 prod.Anio = (int)fila["anio"];
-                prod.Stock = (bool)fila["stock"];
+                prod.Stock = (int)fila["stock"];
+                prod.Stock_Critico = (int)fila["stock_critico"];
                 prod.Precio_Vta = Convert.ToDouble(fila["precio_vta"]);
 
                 lista.Add(prod);
@@ -45,13 +48,14 @@ namespace AutomotrizApp.datos.implementaciones
                 conexion.Open();
                 transaccion = conexion.BeginTransaction();
 
-                SqlCommand cmdMaestro = new SqlCommand("SP_INSERTAR_PEDIDOS", conexion, transaccion);
+                SqlCommand cmdMaestro = new SqlCommand("SP_INSERTAR_DOCUMENTOS", conexion, transaccion);
                 cmdMaestro.CommandType = CommandType.StoredProcedure;
-                cmdMaestro.Parameters.AddWithValue("@empleado", oPedido.Empleado);
+                cmdMaestro.Parameters.AddWithValue("@tipo_documento", "pedido");
+                cmdMaestro.Parameters.AddWithValue("@empleado", oPedido.Vendedor); 
                 cmdMaestro.Parameters.AddWithValue("@cliente", oPedido.Cliente);
                 cmdMaestro.Parameters.AddWithValue("@fecha_entrega", oPedido.Fecha_Entrega);
 
-                SqlParameter parametro = new SqlParameter("@id_pedido", SqlDbType.Int);
+                SqlParameter parametro = new SqlParameter("@id_documento", SqlDbType.Int);
                 parametro.Direction = ParameterDirection.Output;
                 cmdMaestro.Parameters.Add(parametro);
                 cmdMaestro.ExecuteNonQuery();
@@ -97,13 +101,14 @@ namespace AutomotrizApp.datos.implementaciones
                 conexion.Open();
                 transaccion = conexion.BeginTransaction();
 
-                SqlCommand cmdMaestro = new SqlCommand("SP_ACTUALIZAR_PEDIDOS", conexion, transaccion);
+                SqlCommand cmdMaestro = new SqlCommand("SP_ACTUALIZAR_DOCUMENTOS", conexion, transaccion);
                 cmdMaestro.CommandType = CommandType.StoredProcedure;
-                cmdMaestro.Parameters.AddWithValue("@empleado", oPedido.Empleado);
+                cmdMaestro.Parameters.AddWithValue("@tipo_documento", "pedido");
+                cmdMaestro.Parameters.AddWithValue("@empleado", oPedido.Vendedor);
                 cmdMaestro.Parameters.AddWithValue("@cliente", oPedido.Cliente);
                 cmdMaestro.Parameters.AddWithValue("@fecha_entrega", oPedido.Fecha_Entrega);
 
-                SqlParameter parametro = new SqlParameter("@id_pedido", SqlDbType.Int);
+                SqlParameter parametro = new SqlParameter("@id_documento", SqlDbType.Int);
                 parametro.Direction = ParameterDirection.Output;
                 cmdMaestro.Parameters.Add(parametro);
                 cmdMaestro.ExecuteNonQuery();
@@ -114,7 +119,7 @@ namespace AutomotrizApp.datos.implementaciones
                 {
                     SqlCommand cmdDetalle = new SqlCommand("SP_INSERTAR_DETALLES", conexion, transaccion);
                     cmdDetalle.CommandType = CommandType.StoredProcedure;
-                    cmdDetalle.Parameters.AddWithValue("@id_pedido", idPedido);
+                    cmdDetalle.Parameters.AddWithValue("@id_documento", idPedido);
                     cmdDetalle.Parameters.AddWithValue("@id_producto", item.Producto.Id_Producto);
                     cmdDetalle.Parameters.AddWithValue("@precio_unitario", item.Producto.Precio_Vta);
                     cmdDetalle.Parameters.AddWithValue("@cantidad", item.Cantidad);
@@ -139,7 +144,7 @@ namespace AutomotrizApp.datos.implementaciones
 
         public bool Delete(int id)
         {
-            string SP = "SP_ELIMINAR_PEDIDO";
+            string SP = "SP_ELIMINAR_DOCUMENTO";
             List<Parametro> lst = new List<Parametro>();
             bool eliminado = HelperDao.ObtenerInstancia().Ejecutar(SP, lst);
             return eliminado;
@@ -147,6 +152,25 @@ namespace AutomotrizApp.datos.implementaciones
 
         public List<Pedido> GetPedidosPorFiltro(DateTime desde, DateTime hasta, string cliente)
         {
+            //List<Pedido> presupestos = new List<Pedido>();
+            //string SP = "SP_CONSULTAR_DOCUMENTOS";
+            //List<Parametro> lst = new List<Parametro>();
+            //lst.Add(new Parametro("@fecha_desde", desde));
+            //lst.Add(new Parametro("@fecha_hasta", hasta));
+            //lst.Add(new Parametro("@cliente", cliente));
+            //DataTable dt = HelperDao.ObtenerInstancia().Consultar(SP, lst);
+
+            //foreach (DataRow row in dt.Rows)
+            //{
+            //    Pedido pedido = new Pedido();
+            //    pedido.Cliente = row["cliente"].ToString();
+            //    pedido.PresupuestoNro = int.Parse(row["presupuesto_nro"].ToString());
+            //    pedido.Fecha = DateTime.Parse(row["fecha"].ToString());
+            //    pedido.Descuento = double.Parse(row["descuento"].ToString());
+            //    pedido.Add(pedido);
+            //}
+
+            //return presupestos;
             throw new NotImplementedException();
         }
 

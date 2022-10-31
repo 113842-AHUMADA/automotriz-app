@@ -35,19 +35,23 @@ namespace AutomotrizApp.datos
             return this.conexion;
         }
 
-        public DataTable Consultar(string nombreSP)
+        public DataTable Consultar(string nombreSP, List<Parametro> values)
         {
             DataTable tabla = new DataTable();
 
             conexion.Open();
-            SqlCommand comando = new SqlCommand();
-            comando.Connection = conexion;
-            comando.CommandType = CommandType.StoredProcedure;
-            comando.CommandText = nombreSP;
-
-            tabla.Load(comando.ExecuteReader());
-
+            SqlCommand cmd = new SqlCommand(nombreSP, conexion);
+            cmd.CommandType = CommandType.StoredProcedure;
+            if (values != null)
+            {
+                foreach (Parametro oParametro in values)
+                {
+                    cmd.Parameters.AddWithValue(oParametro.Clave, oParametro.Valor);
+                }
+            }
+            tabla.Load(cmd.ExecuteReader());
             conexion.Close();
+
             return tabla;
         }
 
