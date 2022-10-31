@@ -18,7 +18,7 @@ namespace AutomotrizApp.datos
 
         private HelperDao()
         {
-            conexion = new SqlConnection(AutomotrizBack.Properties.Resources.ConnectionString);
+            conexion = new SqlConnection(AutomotrizBack.Properties.Resources.ConnectionStringFede);
         }
 
         public static HelperDao ObtenerInstancia()

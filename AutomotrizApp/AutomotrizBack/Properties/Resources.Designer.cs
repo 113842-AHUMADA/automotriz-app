@@ -61,11 +61,20 @@ namespace AutomotrizBack.Properties {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Data Source=DESKTOP-R46G6B5\SQLEXPRESS;Initial Catalog=AUTOMOTRIZPROG;Integrated Security=True.
+        /// </summary>
+        internal static string ConnectionStringFede {
+            get {
+                return ResourceManager.GetString("ConnectionStringFede", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Data Source=DESKTOP-AR2T61C;Initial Catalog=AUTOMOTRIZPROG;Integrated Security=True.
         /// </summary>
-        internal static string ConnectionString {
+        internal static string ConnectionStringLucas {
             get {
-                return ResourceManager.GetString("ConnectionString", resourceCulture);
+                return ResourceManager.GetString("ConnectionStringLucas", resourceCulture);
             }
         }
     }
