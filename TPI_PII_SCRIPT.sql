@@ -146,5 +146,5 @@ INSERT INTO CREDENCIALES (usuario,contrasenia,privilegio) VALUES ('vendedor','ve
 INSERT INTO PRODUCTOS(marca,modelo,descripcion,color,anio,stock,stock_critico,precio_vta) VALUES ('FIAT','600','3 PUERTAS','DORADO','2022',10,1,9000);
 
 --CLIENTES
-INSERT INTO PRODUCTOS(nom_cliente,ape_cliente,dni,email,telefono) VALUES ('Jorge','Rodriguez',39654789,'jrodriguez@gmail.com',3515578695);
+INSERT INTO CLIENTES (nom_cliente,ape_cliente,dni,email,telefono) VALUES ('Jorge','Rodriguez',39654789,'jrodriguez@gmail.com',3515578695);
 
