@@ -20,7 +20,14 @@ namespace AutomotrizFront
 
         private void salirToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            this.Dispose();
+            var resultado = MessageBox.Show("¿Está seguro que desea salir del sistema?", "Salir", MessageBoxButtons.YesNoCancel, MessageBoxIcon.Question);
+            if (resultado == DialogResult.Yes) 
+                this.Dispose();
+            else
+            {
+                return;
+            }
+                
         }
 
         private void informaciónDeContactoToolStripMenuItem_Click(object sender, EventArgs e)
