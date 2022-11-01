@@ -42,9 +42,14 @@ namespace AutomotrizFront
             else
             {
                 FrmHome home = new FrmHome();
-                this.Close();
+                this.Hide();
                 home.ShowDialog();
             }
+        }
+
+        private void FrmLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

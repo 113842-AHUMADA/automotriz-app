@@ -35,6 +35,8 @@
             this.nuevaOrdenDePedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarOrdenDePedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.informaciónDeContactoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -43,7 +45,8 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.salirToolStripMenuItem,
             this.ordenDePedidoToolStripMenuItem,
-            this.reportesToolStripMenuItem});
+            this.reportesToolStripMenuItem,
+            this.acercaDeToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
@@ -94,6 +97,21 @@
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
+            // acercaDeToolStripMenuItem
+            // 
+            this.acercaDeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.informaciónDeContactoToolStripMenuItem});
+            this.acercaDeToolStripMenuItem.Name = "acercaDeToolStripMenuItem";
+            this.acercaDeToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.acercaDeToolStripMenuItem.Text = "Acerca de...";
+            // 
+            // informaciónDeContactoToolStripMenuItem
+            // 
+            this.informaciónDeContactoToolStripMenuItem.Name = "informaciónDeContactoToolStripMenuItem";
+            this.informaciónDeContactoToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
+            this.informaciónDeContactoToolStripMenuItem.Text = "Información de contacto";
+            this.informaciónDeContactoToolStripMenuItem.Click += new System.EventHandler(this.informaciónDeContactoToolStripMenuItem_Click);
+            // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -120,5 +138,7 @@
         private ToolStripMenuItem nuevaOrdenDePedidoToolStripMenuItem;
         private ToolStripMenuItem consultarOrdenDePedidoToolStripMenuItem;
         private ToolStripMenuItem reportesToolStripMenuItem;
+        private ToolStripMenuItem acercaDeToolStripMenuItem;
+        private ToolStripMenuItem informaciónDeContactoToolStripMenuItem;
     }
 }
