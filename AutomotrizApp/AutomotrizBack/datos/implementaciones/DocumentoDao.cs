@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,7 @@ using System.Transactions;
 
 namespace AutomotrizApp.datos.implementaciones
 {
-    class PedidoDao : IPedidoDao
+    class DocumentoDao : IDocumentoDao
     {
         public List<Producto> GetProductos()
         {
@@ -37,7 +38,7 @@ namespace AutomotrizApp.datos.implementaciones
             return lista;
         }
 
-        public bool Create(Pedido oPedido)
+        public bool Create(Documento oPedido)
         {
             bool respuesta = false;
             SqlConnection conexion = HelperDao.ObtenerInstancia().ObtenerConexion();
@@ -60,13 +61,13 @@ namespace AutomotrizApp.datos.implementaciones
                 cmdMaestro.Parameters.Add(parametro);
                 cmdMaestro.ExecuteNonQuery();
 
-                int idPedido = Convert.ToInt32(parametro.Value);
+                int idDocumento = Convert.ToInt32(parametro.Value);
 
                 foreach (Detalle item in oPedido.lstDetalle)
                 {
                     SqlCommand cmdDetalle = new SqlCommand("SP_INSERTAR_DETALLES", conexion, transaccion);
                     cmdDetalle.CommandType = CommandType.StoredProcedure;
-                    cmdDetalle.Parameters.AddWithValue("@id_pedido", idPedido);
+                    cmdDetalle.Parameters.AddWithValue("@id_pedido", idDocumento);
                     cmdDetalle.Parameters.AddWithValue("@id_producto", item.Producto.Id_Producto);
                     cmdDetalle.Parameters.AddWithValue("@precio_unitario", item.Producto.Precio_Vta);
                     cmdDetalle.Parameters.AddWithValue("@cantidad", item.Cantidad);
@@ -90,7 +91,7 @@ namespace AutomotrizApp.datos.implementaciones
 
         }
 
-        public bool Update(Pedido oPedido)
+        public bool Update(Documento oPedido)
         {
             bool respuesta = false;
             SqlConnection conexion = HelperDao.ObtenerInstancia().ObtenerConexion();
@@ -113,13 +114,13 @@ namespace AutomotrizApp.datos.implementaciones
                 cmdMaestro.Parameters.Add(parametro);
                 cmdMaestro.ExecuteNonQuery();
 
-                int idPedido = Convert.ToInt32(parametro.Value);
+                int idDocumento = Convert.ToInt32(parametro.Value);
 
                 foreach (Detalle item in oPedido.lstDetalle)
                 {
                     SqlCommand cmdDetalle = new SqlCommand("SP_INSERTAR_DETALLES", conexion, transaccion);
                     cmdDetalle.CommandType = CommandType.StoredProcedure;
-                    cmdDetalle.Parameters.AddWithValue("@id_documento", idPedido);
+                    cmdDetalle.Parameters.AddWithValue("@id_documento", idDocumento);
                     cmdDetalle.Parameters.AddWithValue("@id_producto", item.Producto.Id_Producto);
                     cmdDetalle.Parameters.AddWithValue("@precio_unitario", item.Producto.Precio_Vta);
                     cmdDetalle.Parameters.AddWithValue("@cantidad", item.Cantidad);
@@ -150,33 +151,67 @@ namespace AutomotrizApp.datos.implementaciones
             return eliminado;
         }
 
-        public List<Pedido> GetPedidosPorFiltro(DateTime desde, DateTime hasta, string cliente)
+        public List<Documento> GetDocumentosPorFiltro(DateTime desde, DateTime hasta, string cliente)
         {
-            //List<Pedido> presupestos = new List<Pedido>();
-            //string SP = "SP_CONSULTAR_DOCUMENTOS";
-            //List<Parametro> lst = new List<Parametro>();
-            //lst.Add(new Parametro("@fecha_desde", desde));
-            //lst.Add(new Parametro("@fecha_hasta", hasta));
-            //lst.Add(new Parametro("@cliente", cliente));
-            //DataTable dt = HelperDao.ObtenerInstancia().Consultar(SP, lst);
+            List<Documento> documentos = new List<Documento>();
+            string SP = "SP_CONSULTAR_DOCUMENTOS";
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@fecha_desde", desde));
+            lst.Add(new Parametro("@fecha_hasta", hasta));
+            lst.Add(new Parametro("@cliente", cliente));
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar(SP, lst);
 
-            //foreach (DataRow row in dt.Rows)
-            //{
-            //    Pedido pedido = new Pedido();
-            //    pedido.Cliente = row["cliente"].ToString();
-            //    pedido.PresupuestoNro = int.Parse(row["presupuesto_nro"].ToString());
-            //    pedido.Fecha = DateTime.Parse(row["fecha"].ToString());
-            //    pedido.Descuento = double.Parse(row["descuento"].ToString());
-            //    pedido.Add(pedido);
-            //}
+            foreach (DataRow fila in tabla.Rows)
+            {
+                Documento documento = new Documento();
+                documento.Id_Documento = int.Parse(fila["id_documento"].ToString());
+                documento.Vendedor = fila["vendedor"].ToString();
+                documento.Cliente = fila["cliente"].ToString();
+                documento.Fecha_Documento = DateTime.Parse(fila["fecha_documento"].ToString());
+                documento.Fecha_Entrega = DateTime.Parse(fila["fecha_entrega"].ToString());
+                documentos.Add(documento);
+            }
 
-            //return presupestos;
-            throw new NotImplementedException();
+            return documentos;
+
         }
 
-        public Pedido GetPedidoPorId(int id)
+        public Documento GetDocumentoPorId(int id)
         {
-            throw new NotImplementedException();
+            Documento documento = new Documento();
+            string SP = "SP_CONSULTAR_DOCUMENTOS_CON_DETALLES";
+            List<Parametro> lst = new List<Parametro>();
+            lst.Add(new Parametro("@id_documento", id));
+
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar(SP, lst);
+            bool primero = true;
+
+            foreach (DataRow fila in tabla.Rows)
+            {
+                if (primero)
+                {
+                    documento.Vendedor = fila["vendedor"].ToString();
+                    documento.Cliente = fila["cliente"].ToString();
+                    documento.Fecha_Documento = DateTime.Parse(fila["fecha_documento"].ToString());
+                    documento.Fecha_Documento = DateTime.Parse(fila["fecha_entrega"].ToString());
+                    primero = false;
+                }
+                int id_producto = int.Parse(fila["id_producto"].ToString());
+                string marca = fila["marca"].ToString();
+                string modelo = fila["modelo"].ToString();
+                string descripcion = fila["descripcion"].ToString();
+                string color = fila["color"].ToString();
+                int anio = int.Parse(fila["anio"].ToString());
+                double precio_vta = double.Parse(fila["precio_vta"].ToString());
+
+                Producto producto = new Producto(id_producto,marca,modelo,descripcion,color,anio,precio_vta);
+                int cantidad = int.Parse(fila["cantidad"].ToString());
+                Detalle detalle = new Detalle(producto, cantidad);
+                documento.AgregarDetalle(detalle);
+
+            }
+
+            return documento;
         }
 
         public DataTable GetReporteProductos(DateTime desde, DateTime hasta)

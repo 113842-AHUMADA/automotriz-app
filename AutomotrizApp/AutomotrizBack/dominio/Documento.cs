@@ -6,14 +6,16 @@ using System.Threading.Tasks;
 
 namespace AutomotrizApp.dominio
 {
-    public class Pedido
+    public class Documento
     {
+        public int Id_Documento { get; set; }
         public string Vendedor { get; set; }
         public string Cliente { get; set; }
+        public DateTime Fecha_Documento { get; set; }
         public DateTime Fecha_Entrega { get; set; }
         public List<Detalle> lstDetalle { get; set; }
 
-        public Pedido()
+        public Documento()
         {
             lstDetalle = new List<Detalle>();
         }

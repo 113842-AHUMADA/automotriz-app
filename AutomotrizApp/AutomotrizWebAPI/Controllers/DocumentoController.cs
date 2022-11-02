@@ -9,11 +9,11 @@ namespace AutomotrizWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PedidoController : ControllerBase
+    public class DocumentoController : ControllerBase
     {
         private IAplicacion app;
 
-        public PedidoController()
+        public DocumentoController()
         {
             app = new Aplicacion();
         }
@@ -33,11 +33,11 @@ namespace AutomotrizWebAPI.Controllers
         }
 
         [HttpGet("consultar")]
-        public IActionResult GetPedidos(DateTime desde, DateTime hasta, string cliente)
+        public IActionResult GetDocumentos(DateTime desde, DateTime hasta, string cliente)
         {
             try
             {
-                return Ok(app.ObtenerPedidosPorFiltro(desde,hasta,cliente));
+                return Ok(app.ObtenerDocumentosPorFiltro(desde,hasta,cliente));
             }
             catch (Exception ex)
             {
@@ -47,14 +47,14 @@ namespace AutomotrizWebAPI.Controllers
         }
 
         [HttpPost("crear")]
-        public IActionResult PostPedido(Pedido oPedido)
+        public IActionResult PostDocumento(Documento oPedido)
         {
             try
             {
                 if (oPedido == null)
                     return BadRequest("Objeto Pedido requerido");
                 else
-                    return Ok(app.CrearPedido(oPedido));
+                    return Ok(app.CrearDocumento(oPedido));
             }
             catch (Exception ex)
             {
@@ -63,14 +63,14 @@ namespace AutomotrizWebAPI.Controllers
         }
 
         [HttpDelete("eliminar")]
-        public IActionResult DeletePedido(int id)
+        public IActionResult DeleteDocumento(int id)
         {
             try
             {
                 if (id == 0)
                     return BadRequest("Id es requerido");
                 else
-                    return Ok(app.BorrarPedido(id));
+                    return Ok(app.BorrarDocumento(id));
             }
             catch (Exception ex)
             {

@@ -1,7 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
+using System.Reflection;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace AutomotrizApp.dominio
@@ -17,8 +20,24 @@ namespace AutomotrizApp.dominio
         public int Stock { get; set; }
         public int Stock_Critico { get; set; }
         public double Precio_Vta { get; set; }
+        public Producto()
+        {
+        }
+        public Producto(int id_producto, string marca, string modelo, string descripcion, string color,int anio,double precio_vta)
+        {
+            Id_Producto = id_producto;
+            Marca = marca;
+            Modelo = modelo;
+            Descripcion = descripcion;
+            Color = color;
+            Anio = anio;
+            Precio_Vta = precio_vta;
+
+        }
         
 
 
     }
+    
+
 }

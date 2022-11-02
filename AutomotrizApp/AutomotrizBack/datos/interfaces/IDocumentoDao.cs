@@ -8,19 +8,19 @@ using System.Threading.Tasks;
 
 namespace AutomotrizApp.datos.interfaces
 {
-    interface IPedidoDao
+    interface IDocumentoDao
     {
         List<Producto> GetProductos();
 
-        bool Create(Pedido oPedido);
+        bool Create(Documento oPedido);
 
-        bool Update(Pedido oPedido);
+        bool Update(Documento oPedido);
 
         bool Delete(int id);
 
-        List<Pedido> GetPedidosPorFiltro(DateTime desde, DateTime hasta, string cliente);
+        List<Documento> GetDocumentosPorFiltro(DateTime desde, DateTime hasta, string cliente);
         
-        Pedido GetPedidoPorId(int id);
+        Documento GetDocumentoPorId(int id);
 
         DataTable GetReporteProductos(DateTime desde, DateTime hasta);
 

@@ -12,15 +12,15 @@ namespace AutomotrizBack.negocio.interfaces
     {
         public List<Producto> ObtenerProductos();
 
-        public bool CrearPedido(Pedido oPedido);
+        public bool CrearDocumento(Documento oPedido);
 
-        public bool ActualizarPedido(Pedido oPedido);
+        public bool ActualizarDocumento(Documento oPedido);
 
-        public bool BorrarPedido(int id);
+        public bool BorrarDocumento(int id);
 
-        public List<Pedido> ObtenerPedidosPorFiltro(DateTime desde, DateTime hasta, string cliente);
+        public List<Documento> ObtenerDocumentosPorFiltro(DateTime desde, DateTime hasta, string cliente);
 
-        public Pedido ObtenerPedidoPorId(int id);
+        public Documento ObtenerDocumentoPorId(int id);
 
         DataTable ObtenerReporteProductos(DateTime desde, DateTime hasta);
     }

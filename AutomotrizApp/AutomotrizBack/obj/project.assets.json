@@ -470,19 +470,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vaio\\.nuget\\packages\\": {}
+    "C:\\Users\\ahufe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
+      "projectUniqueName": "Z:\\_PERSONAL\\PROGRAMACION\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
       "projectName": "AutomotrizBack",
-      "projectPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
-      "packagesPath": "C:\\Users\\Vaio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\obj\\",
+      "projectPath": "Z:\\_PERSONAL\\PROGRAMACION\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
+      "packagesPath": "C:\\Users\\ahufe\\.nuget\\packages\\",
+      "outputPath": "Z:\\_PERSONAL\\PROGRAMACION\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vaio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ahufe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -529,7 +529,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -55,3 +55,17 @@ C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico fin
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.GenerateResource.cache
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.Properties.Resources.resources
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.GenerateResource.cache
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\bin\Debug\net6.0\AutomotrizBack.deps.json
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\bin\Debug\net6.0\AutomotrizBack.dll
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\bin\Debug\net6.0\AutomotrizBack.pdb
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.AssemblyReference.cache
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.Properties.Resources.resources
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.GenerateResource.cache
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.GeneratedMSBuildEditorConfig.editorconfig
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.AssemblyInfoInputs.cache
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.AssemblyInfo.cs
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.CoreCompileInputs.cache
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.dll
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\refint\AutomotrizBack.dll
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.pdb
+Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\ref\AutomotrizBack.dll

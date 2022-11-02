@@ -13,11 +13,11 @@ namespace AutomotrizBack.negocio.implementaciones
 {
     public class Aplicacion : IAplicacion
     {
-        private IPedidoDao oDao;
+        private IDocumentoDao oDao;
 
         public Aplicacion()
         {
-            oDao = new PedidoDao();
+            oDao = new DocumentoDao();
         }
 
         public List<Producto> ObtenerProductos()
@@ -25,29 +25,29 @@ namespace AutomotrizBack.negocio.implementaciones
             return oDao.GetProductos();
         }
 
-        public bool CrearPedido(Pedido oPedido)
+        public bool CrearDocumento(Documento oPedido)
         {
             return oDao.Create(oPedido);
         }
 
-        public bool ActualizarPedido(Pedido oPedido)
+        public bool ActualizarDocumento(Documento oPedido)
         {
             return oDao.Update(oPedido);
         }
 
-        public bool BorrarPedido(int id)
+        public bool BorrarDocumento(int id)
         {
             return oDao.Delete(id);
         }
 
-        public List<Pedido> ObtenerPedidosPorFiltro(DateTime desde, DateTime hasta, string cliente)
+        public List<Documento> ObtenerDocumentosPorFiltro(DateTime desde, DateTime hasta, string cliente)
         {
-            throw new NotImplementedException();
+            return oDao.GetDocumentosPorFiltro(desde, hasta, cliente);
         }
 
-        public Pedido ObtenerPedidoPorId(int id)
+        public Documento ObtenerDocumentoPorId(int id)
         {
-            throw new NotImplementedException();
+            return oDao.GetDocumentoPorId(id);
         }
 
         public DataTable ObtenerReporteProductos(DateTime desde, DateTime hasta)
