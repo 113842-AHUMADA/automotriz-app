@@ -10,7 +10,11 @@
     <Compile Update="FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
+<<<<<<< Updated upstream
     <Compile Update="ReporteProducto.cs">
+=======
+    <Compile Update="FrmReporteProducto.cs">
+>>>>>>> Stashed changes
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
