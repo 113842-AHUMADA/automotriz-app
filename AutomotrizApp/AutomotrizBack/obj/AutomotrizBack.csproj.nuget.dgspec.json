@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "Z:\\_PERSONAL\\PROGRAMACION\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {}
+    "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {}
   },
   "projects": {
-    "Z:\\_PERSONAL\\PROGRAMACION\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
+    "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "Z:\\_PERSONAL\\PROGRAMACION\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
+        "projectUniqueName": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
         "projectName": "AutomotrizBack",
-        "projectPath": "Z:\\_PERSONAL\\PROGRAMACION\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
+        "projectPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj",
         "packagesPath": "C:\\Users\\ahufe\\.nuget\\packages\\",
-        "outputPath": "Z:\\_PERSONAL\\PROGRAMACION\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\obj\\",
+        "outputPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ahufe\\AppData\\Roaming\\NuGet\\NuGet.Config",

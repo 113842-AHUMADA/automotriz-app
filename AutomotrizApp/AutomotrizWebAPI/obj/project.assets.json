@@ -706,11 +706,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "Z:\\_PERSONAL\\PROGRAMACION\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
+      "projectUniqueName": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
       "projectName": "AutomotrizWebAPI",
-      "projectPath": "Z:\\_PERSONAL\\PROGRAMACION\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
+      "projectPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
       "packagesPath": "C:\\Users\\ahufe\\.nuget\\packages\\",
-      "outputPath": "Z:\\_PERSONAL\\PROGRAMACION\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\obj\\",
+      "outputPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ahufe\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -727,8 +727,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "Z:\\_PERSONAL\\PROGRAMACION\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
-              "projectPath": "Z:\\_PERSONAL\\PROGRAMACION\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj"
+            "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
+              "projectPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj"
             }
           }
         }
