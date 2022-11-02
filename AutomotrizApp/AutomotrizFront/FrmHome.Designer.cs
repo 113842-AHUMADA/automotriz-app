@@ -37,6 +37,7 @@
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informaciónDeContactoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockDeVehiculosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -93,6 +94,8 @@
             // 
             // reportesToolStripMenuItem
             // 
+            this.reportesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.stockDeVehiculosToolStripMenuItem});
             this.reportesToolStripMenuItem.Name = "reportesToolStripMenuItem";
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
@@ -111,6 +114,13 @@
             this.informaciónDeContactoToolStripMenuItem.Size = new System.Drawing.Size(205, 22);
             this.informaciónDeContactoToolStripMenuItem.Text = "Información de contacto";
             this.informaciónDeContactoToolStripMenuItem.Click += new System.EventHandler(this.informaciónDeContactoToolStripMenuItem_Click);
+            // 
+            // stockDeVehiculosToolStripMenuItem
+            // 
+            this.stockDeVehiculosToolStripMenuItem.Name = "stockDeVehiculosToolStripMenuItem";
+            this.stockDeVehiculosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stockDeVehiculosToolStripMenuItem.Text = "Stock de Vehiculos";
+            this.stockDeVehiculosToolStripMenuItem.Click += new System.EventHandler(this.stockDeVehiculosToolStripMenuItem_Click);
             // 
             // FrmHome
             // 
@@ -140,5 +150,6 @@
         private ToolStripMenuItem reportesToolStripMenuItem;
         private ToolStripMenuItem acercaDeToolStripMenuItem;
         private ToolStripMenuItem informaciónDeContactoToolStripMenuItem;
+        private ToolStripMenuItem stockDeVehiculosToolStripMenuItem;
     }
 }

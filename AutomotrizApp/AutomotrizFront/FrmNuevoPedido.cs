@@ -35,6 +35,9 @@ namespace AutomotrizFront
             cboProductos.ValueMember = "Id_producto";
         }
 
+        private void grupo_Nuevo_Presupuesto_Enter(object sender, EventArgs e)
+        {
 
+        }
     }
 }

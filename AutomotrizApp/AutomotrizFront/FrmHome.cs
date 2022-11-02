@@ -34,5 +34,11 @@ namespace AutomotrizFront
         {
             MessageBox.Show("Alumnos                                     Legajo\n\nAhumada Federico                    113842\nDe San Nicolas Macaño Indira 113013\nLuiten Lucas                               112862\nComisión: 1W3\nAño: 2022", "Información grupo 20", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void stockDeVehiculosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmReporte stock_vehiculos = new FrmReporte();
+            stock_vehiculos.ShowDialog();
+        }
     }
 }

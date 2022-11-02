@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Reportes\Reporte.rdlc" />
+    <None Remove="Reportes\ListadoProductos.rdlc" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="Reportes\Reporte.rdlc" />
+    <EmbeddedResource Include="Reportes\ListadoProductos.rdlc" />
   </ItemGroup>
 
   <ItemGroup>
@@ -31,6 +31,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Update="Reportes\DSListado.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DSListado.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -38,6 +43,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Reportes\DSListado.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSListado.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
 
 </Project>

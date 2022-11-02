@@ -88,6 +88,7 @@
             this.grupo_Nuevo_Presupuesto.TabIndex = 4;
             this.grupo_Nuevo_Presupuesto.TabStop = false;
             this.grupo_Nuevo_Presupuesto.Text = "Nuevo Pedido";
+            this.grupo_Nuevo_Presupuesto.Enter += new System.EventHandler(this.grupo_Nuevo_Presupuesto_Enter);
             // 
             // label1
             // 
