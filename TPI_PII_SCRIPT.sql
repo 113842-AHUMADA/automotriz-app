@@ -27,27 +27,15 @@ precio_vta			numeric (10,2) NOT NULL,
 	CONSTRAINT pk_productos PRIMARY KEY (id_producto)
 );
 
-CREATE TABLE CLIENTES(
-id_cliente		int IDENTITY(1,1) NOT NULL,
-nom_cliente		varchar(100) NOT NULL,
-ape_cliente		varchar(100) NOT NULL,
-dni				bigint NOT NULL,
-email			varchar(100) NOT NULL,
-telefono		numeric(10, 0) NOT NULL,
-	CONSTRAINT pk_clientes PRIMARY KEY (id_cliente)
-);
-
 CREATE TABLE DOCUMENTOS(
 id_documento		int IDENTITY(1,1),
-tipo_documento		varchar(100) NOT NULL, --HARDCODEADO
+tipo_documento		varchar(100) NOT NULL,	--HARDCODEADO
 vendedor			varchar(100) NOT NULL,
-id_cliente			int NOT NULL,
+cliente				varchar(100) NOT NULL,	--HARDCODEADO
 fecha_documento		datetime NOT NULL,
 fecha_entrega		datetime NOT NULL,
 fecha_baja			datetime NULL,
 	CONSTRAINT pk_pedidos PRIMARY KEY (id_documento),
-	CONSTRAINT fk_documentos_clientes FOREIGN KEY (id_cliente)
-		REFERENCES CLIENTES (id_cliente)
 );
 
 CREATE TABLE DETALLES(
@@ -70,7 +58,7 @@ cantidad				smallint NOT NULL,
 create procedure SP_CONSULTAR_PRODUCTOS
 as
 begin
-	select * from productos order by marca;
+	select * from productos order by marca
 end;
 
 -----------------------------------------
@@ -84,7 +72,7 @@ create procedure SP_INSERTAR_DETALLES
 as
 begin
 	insert into DETALLES(id_documento,id_producto,precio_unitario,cantidad)
-    values (@id_documento,@id_producto,@precio_unitario,@cantidad);
+    values (@id_documento,@id_producto,@precio_unitario,@cantidad)
   
 end;
 
@@ -95,12 +83,12 @@ create procedure SP_INSERTAR_DOCUMENTOS
 	@id_documento int output,
 	@tipo_documento	varchar(100),
 	@vendedor varchar(100),
-	@id_cliente varchar(100),
+	@cliente varchar(100),
 	@fecha_entrega datetime
 as
 begin
-	insert into documentos (tipo_documento,vendedor,id_cliente,fecha_documento,fecha_entrega,fecha_baja)
-	values (@tipo_documento,@vendedor,@id_cliente,getdate(),@fecha_entrega,null);
+	insert into documentos (tipo_documento,vendedor,cliente,fecha_documento,fecha_entrega,fecha_baja)
+	values (@tipo_documento,@vendedor,@cliente,getdate(),@fecha_entrega,null);
 	set @id_documento = scope_identity()
 end;
 
@@ -111,8 +99,8 @@ create procedure SP_ELIMINAR_DOCUMENTOS
 	@id_documento int
 as
 begin
-	UPDATE documentos SET fecha_baja = GETDATE() 
-	where @id_documento = id_documento;
+	update documentos set fecha_baja = getdate() 
+	where @id_documento = id_documento
 end;
 
 -----------------------------------------
@@ -121,17 +109,61 @@ end;
 create procedure SP_ACTUALIZAR_DOCUMENTOS
 	@id_documento int,
 	@vendedor int, 
-	@id_cliente varchar(200),
+	@cliente varchar(200),
 	@fecha_entrega datetime
 as
 begin
-	UPDATE DOCUMENTOS 
-	SET vendedor = @vendedor, id_cliente = @id_cliente, fecha_documento = getdate(), fecha_entrega = @fecha_entrega, fecha_baja = null
+	update DOCUMENTOS 
+	set vendedor = @vendedor, cliente = @cliente, fecha_documento = getdate(), fecha_entrega = @fecha_entrega, fecha_baja = null
 	where id_documento = @id_documento;
 	
 	delete detalles
-	where id_documento = @id_documento;
+	where id_documento = @id_documento
 end;
+
+-----------------------------------------
+-----------------------------------------
+
+create procedure SP_CONSULTAR_DOCUMENTOS
+	@fecha_desde datetime,
+	@fecha_hasta datetime,
+	@cliente varchar(255)
+as
+begin
+	select * 
+	from documentos
+	where (@fecha_desde is null OR fecha_documento >= @fecha_desde)
+	and (@fecha_hasta is null OR fecha_documento <= @fecha_hasta)
+	and (@cliente is null OR cliente LIKE '%' + @cliente + '%')
+	and fecha_baja is null;
+end;
+
+-----------------------------------------
+-----------------------------------------
+
+create procedure SP_CONSULTAR_DOCUMENTOS_CON_DETALLES
+	@id_documento int
+as
+begin
+	select d.*,p.marca,p.modelo,p.descripcion,p.color,p.anio,p.precio_vta,doc.vendedor,doc.cliente,doc.fecha_documento,doc.fecha_entrega
+	from detalles d
+	join productos p on p.id_producto = d.id_producto
+	join documentos doc on d.id_documento = doc.id_documento
+end;
+
+-----------------------------------------
+-----------------------------------------
+
+
+
+CREATE PROCEDURE SP_INGRESAR
+	@usuario varchar(100),
+	@contrasenia varchar(100),
+	@privilegio varchar(20) output
+AS
+BEGIN
+	set @privilegio = (SELECT privilegio FROM credenciales where usuario = @usuario AND contrasenia = @contrasenia)
+END
 
 	----------------------------------------------------------------
 --           				INSERT REGISTROS						  --
