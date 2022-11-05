@@ -17,21 +17,7 @@ namespace AutomotrizWebAPI.Controllers
         {
             app = new Aplicacion();
         }
-
-        [HttpGet("productos")]
-        public IActionResult GetProductos()
-        {
-            try
-            {
-                return Ok(app.ObtenerProductos());
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, "Error interno. Intente nuevamente");
-            }
-
-        }
-
+               
         [HttpGet("consultar")]
         public IActionResult GetDocumentos(DateTime desde, DateTime hasta, string cliente)
         {
