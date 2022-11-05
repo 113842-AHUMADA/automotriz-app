@@ -1,4 +1,5 @@
-﻿using AutomotrizBack.negocio.implementaciones;
+﻿using AutomotrizBack.datos;
+using AutomotrizBack.negocio.implementaciones;
 using AutomotrizBack.negocio.interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -17,11 +18,11 @@ namespace AutomotrizWebAPI.Controllers
         }
 
         [HttpPost("ingresar")]
-        public IActionResult GetLogin(string usuario, string password)
+        public IActionResult PostLogin(List<Parametro> credenciales)
         {
             try
             {
-                return Ok(app.ObtenerLogin(usuario, password));
+                return Ok(app.Login(credenciales));
             }
             catch (Exception ex)
             {

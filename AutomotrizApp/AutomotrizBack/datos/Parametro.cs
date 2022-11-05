@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutomotrizBack.datos
 {
-    internal class Parametro
+    public class Parametro
     {
         public string Clave { get; set; }
         public object Valor { get; set; }

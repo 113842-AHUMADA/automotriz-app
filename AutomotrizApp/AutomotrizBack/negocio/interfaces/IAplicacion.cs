@@ -1,4 +1,5 @@
 ﻿using AutomotrizApp.dominio;
+using AutomotrizBack.datos;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -26,7 +27,7 @@ namespace AutomotrizBack.negocio.interfaces
 
         public DataTable ObtenerReporteProductosListado();
 
-        public string ObtenerLogin(string usuario, string password);
+        public string Login(List<Parametro> credenciales);
 
 
     }

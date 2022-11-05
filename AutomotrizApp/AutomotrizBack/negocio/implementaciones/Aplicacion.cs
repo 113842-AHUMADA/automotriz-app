@@ -1,6 +1,7 @@
 ﻿using AutomotrizApp.datos.implementaciones;
 using AutomotrizApp.datos.interfaces;
 using AutomotrizApp.dominio;
+using AutomotrizBack.datos;
 using AutomotrizBack.datos.implementaciones;
 using AutomotrizBack.datos.interfaces;
 using AutomotrizBack.negocio.interfaces;
@@ -76,9 +77,9 @@ namespace AutomotrizBack.negocio.implementaciones
         //  LOGIN
 
 
-        public string ObtenerLogin(string usuario, string password)
+        public string Login(List<Parametro> credenciales)
         {
-            return loginDao.GetLogin(usuario, password);  
+            return loginDao.Login(credenciales);  
         }
 
     }

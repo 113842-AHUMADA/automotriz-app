@@ -55,6 +55,28 @@ namespace AutomotrizApp.datos
             return tabla;
         }
 
+        //public string ConsultarLogin(string nombreSP, List<Parametro> credenciales)
+        //{
+        //    conexion.Open();
+        //    SqlCommand cmdLogin = new SqlCommand(nombreSP, conexion);
+        //    cmdLogin.CommandType = CommandType.StoredProcedure;
+        //    if (credenciales != null)
+        //    {
+        //        foreach (Parametro oParametro in credenciales)
+        //        {
+        //            cmdLogin.Parameters.AddWithValue(oParametro.Clave, oParametro.Valor);
+        //        }
+        //    }
+        //    SqlParameter parametro = new SqlParameter("@privilegio", SqlDbType.VarChar, 20);
+        //    parametro.Direction = ParameterDirection.Output;
+        //    cmdLogin.Parameters.Add(parametro);
+        //    cmdLogin.ExecuteNonQuery();
+        //    conexion.Close();
+
+        //    return parametro.Value.ToString();
+        //}
+
+
         internal bool Ejecutar(string sp, List<Parametro> lst)
         {
             bool respuesta = false;

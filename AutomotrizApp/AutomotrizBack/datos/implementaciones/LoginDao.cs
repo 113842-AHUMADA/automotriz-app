@@ -12,10 +12,10 @@ namespace AutomotrizBack.datos.implementaciones
 {
     internal class LoginDao : ILoginDao
     {
-        public string GetLogin(string usuario, string password)
+        public string Login(List<Parametro> credenciales)
         {
 
-            string respuesta = "";
+            string respuesta;
             SqlConnection conexion = HelperDao.ObtenerInstancia().ObtenerConexion();
 
             try
@@ -29,15 +29,19 @@ namespace AutomotrizBack.datos.implementaciones
 
                 SqlCommand cmdLogin = new SqlCommand("SP_INGRESAR", conexion);
                 cmdLogin.CommandType = CommandType.StoredProcedure;
-                cmdLogin.Parameters.AddWithValue("@usuario", usuario);
-                cmdLogin.Parameters.AddWithValue("@contrasenia", password);
 
+                if (credenciales != null)
+                {
+                    foreach (Parametro param in credenciales)
+                    {
+                        cmdLogin.Parameters.AddWithValue(param.Clave, param.Valor.ToString());
+                    }
+                }
+                
                 SqlParameter parametro = new SqlParameter("@privilegio", SqlDbType.VarChar, 20);
                 parametro.Direction = ParameterDirection.Output;
                 cmdLogin.Parameters.Add(parametro);
                 cmdLogin.ExecuteNonQuery();
-
-
 
                 if (parametro.Value.ToString() == "")
                     respuesta = "Usuario Incorrecto";
