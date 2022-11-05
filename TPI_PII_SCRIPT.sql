@@ -154,7 +154,27 @@ end;
 -----------------------------------------
 -----------------------------------------
 
+create procedure SP_REPORTE_PRODUCTOS_LISTADO
+as
+begin
+	select id_producto'Id_Producto',marca'Marca',modelo'Modelo',descripcion'Descripcion',color'Color',anio'Anio',
+	stock'Stock',stock_critico'Stock_Critico',precio_vta'Precio_Vta'
+	from productos
+end;
 
+-----------------------------------------
+-----------------------------------------
+
+create procedure SP_REPORTE_PRODUCTOS_AGRUPADO
+as
+begin
+	select id_producto'Id_Producto',marca'Marca',modelo'Modelo',descripcion'Descripcion',color'Color',anio'Anio',
+	stock'Stock',stock_critico'Stock_Critico',precio_vta'Precio_Vta'
+	from productos
+end;
+
+-----------------------------------------
+-----------------------------------------
 
 CREATE PROCEDURE SP_INGRESAR
 	@usuario varchar(100),
