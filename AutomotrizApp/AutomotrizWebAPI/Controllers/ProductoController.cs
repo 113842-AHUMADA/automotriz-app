@@ -2,6 +2,7 @@
 using AutomotrizBack.negocio.interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace AutomotrizWebAPI.Controllers
 {
@@ -40,7 +41,11 @@ namespace AutomotrizWebAPI.Controllers
 
             try
             {
-                return Ok(app.ObtenerReporteProductosListado());
+                string JSONresult;
+                JSONresult = JsonConvert.SerializeObject(app.ObtenerReporteProductosListado());
+                
+                
+                return Ok(JSONresult);
             }
             catch (Exception ex)
             {

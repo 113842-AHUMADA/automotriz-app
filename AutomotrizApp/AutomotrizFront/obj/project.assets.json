@@ -1426,19 +1426,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ahufe\\.nuget\\packages\\": {}
+    "C:\\Users\\Vaio\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizFront\\AutomotrizFront.csproj",
+      "projectUniqueName": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizFront\\AutomotrizFront.csproj",
       "projectName": "AutomotrizFront",
-      "projectPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizFront\\AutomotrizFront.csproj",
-      "packagesPath": "C:\\Users\\ahufe\\.nuget\\packages\\",
-      "outputPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizFront\\obj\\",
+      "projectPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizFront\\AutomotrizFront.csproj",
+      "packagesPath": "C:\\Users\\Vaio\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizFront\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ahufe\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Vaio\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1452,8 +1452,8 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
-              "projectPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj"
+            "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
+              "projectPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj"
             }
           }
         }
@@ -1496,7 +1496,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
