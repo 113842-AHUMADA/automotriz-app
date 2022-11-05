@@ -22,6 +22,12 @@ namespace AutomotrizBack.negocio.interfaces
 
         public Documento ObtenerDocumentoPorId(int id);
 
-        DataTable ObtenerReporteProductos(DateTime desde, DateTime hasta);
+        public DataTable ObtenerReporteProductos(DateTime desde, DateTime hasta);
+
+        public DataTable ObtenerReporteProductosListado();
+
+        public string ObtenerLogin(string usuario, string password);
+
+
     }
 }

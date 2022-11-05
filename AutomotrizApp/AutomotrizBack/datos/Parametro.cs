@@ -16,5 +16,6 @@ namespace AutomotrizBack.datos
             Clave = clave;
             Valor = valor;
         }
+
     }
 }

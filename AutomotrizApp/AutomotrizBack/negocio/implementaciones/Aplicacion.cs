@@ -1,6 +1,8 @@
 ﻿using AutomotrizApp.datos.implementaciones;
 using AutomotrizApp.datos.interfaces;
 using AutomotrizApp.dominio;
+using AutomotrizBack.datos.implementaciones;
+using AutomotrizBack.datos.interfaces;
 using AutomotrizBack.negocio.interfaces;
 using System;
 using System.Collections.Generic;
@@ -13,51 +15,71 @@ namespace AutomotrizBack.negocio.implementaciones
 {
     public class Aplicacion : IAplicacion
     {
-        private IDocumentoDao oDao;
+        private IDocumentoDao documentoDao;
+        private IProductoDao productoDao;
+        private ILoginDao loginDao;
 
         public Aplicacion()
         {
-            oDao = new DocumentoDao();
+            documentoDao = new DocumentoDao();
+            productoDao = new ProductoDao();
+            loginDao = new LoginDao();
         }
 
-        public List<Producto> ObtenerProductos()
-        {
-            return oDao.GetProductos();
-        }
+
+        //  DOCUMENTO
 
         public bool CrearDocumento(Documento oPedido)
         {
-            return oDao.Create(oPedido);
+            return documentoDao.Create(oPedido);
         }
 
         public bool ActualizarDocumento(Documento oPedido)
         {
-            return oDao.Update(oPedido);
+            return documentoDao.Update(oPedido);
         }
 
         public bool BorrarDocumento(int id)
         {
-            return oDao.Delete(id);
+            return documentoDao.Delete(id);
         }
 
         public List<Documento> ObtenerDocumentosPorFiltro(DateTime desde, DateTime hasta, string cliente)
         {
-            return oDao.GetDocumentosPorFiltro(desde, hasta, cliente);
+            return documentoDao.GetDocumentosPorFiltro(desde, hasta, cliente);
         }
 
         public Documento ObtenerDocumentoPorId(int id)
         {
-            return oDao.GetDocumentoPorId(id);
+            return documentoDao.GetDocumentoPorId(id);
+        }
+
+
+        //  PRODUCTO
+
+        public List<Producto> ObtenerProductos()
+        {
+            return productoDao.GetProductos();
+        }
+
+        public DataTable ObtenerReporteProductosListado()
+        {
+            return productoDao.GetReporteProductosListado();
         }
 
         public DataTable ObtenerReporteProductos(DateTime desde, DateTime hasta)
         {
-            throw new NotImplementedException();
+            return productoDao.GetReporteProductos(desde, hasta);
         }
 
-        public string Login(string usuario, string password)
+
+        //  LOGIN
+
+
+        public string ObtenerLogin(string usuario, string password)
         {
-            return oDao.Login(usuario, password);  
+            return loginDao.GetLogin(usuario, password);  
         }
+
     }
 }

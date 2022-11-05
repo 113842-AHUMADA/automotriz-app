@@ -10,8 +10,6 @@ namespace AutomotrizApp.datos.interfaces
 {
     interface IDocumentoDao
     {
-        List<Producto> GetProductos();
-
         bool Create(Documento oPedido);
 
         bool Update(Documento oPedido);
@@ -22,8 +20,5 @@ namespace AutomotrizApp.datos.interfaces
         
         Documento GetDocumentoPorId(int id);
 
-        DataTable GetReporteProductos(DateTime desde, DateTime hasta);
-
-        string Login(string usuario, string password);
     }
 }
