@@ -1,4 +1,4 @@
-﻿namespace AutomotrizFront
+﻿ namespace AutomotrizFront
 {
     partial class FrmReporte
     {
@@ -34,7 +34,7 @@
             // reportViewer1
             // 
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "AutomotrizFront.Reportes.ListadoProductos.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Location = new System.Drawing.Point(5, 5);
             this.reportViewer1.Name = "ReportViewer";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(816, 250);
@@ -44,7 +44,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(839, 336);
+            this.ClientSize = new System.Drawing.Size(829, 272);
             this.Controls.Add(this.reportViewer1);
             this.Name = "FrmReporte";
             this.Text = "FrmReporte";

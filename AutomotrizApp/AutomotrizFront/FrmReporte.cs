@@ -1,6 +1,6 @@
 ﻿using AutomotrizApp.dominio;
 using AutomotrizFront.Http;
-using AutomotrizFront.Reportes.DSListadoTableAdapters;
+//using AutomotrizFront.Reportes.DSListadoTableAdapters;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -23,14 +23,14 @@ namespace AutomotrizFront
 
         private void FrmReporte_Load(object sender, EventArgs e)
         {
-            //reportViewer1.LocalReport.ReportEmbeddedResource = "AutomotrizFront.Reportes.ListadoProductos.rdlc";
+             //reportViewer1.LocalReport.ReportEmbeddedResource = "AutomotrizFront.Reportes.ListadoProductos.rdlc";
             CargarReporteAsync();
             
         }
 
         private async Task CargarReporteAsync()
         {
-            var result = await ClienteSingleton.ObtenerInstancia().GetAsync("http://localhost:5008/api/Documento/productos");
+            var result = await ClienteSingleton.ObtenerInstancia().GetAsync("http://localhost:5008/api/Producto/consultar");
 
             DataTable dt = JsonConvert.DeserializeObject<DataTable>(result);
             reportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", dt));

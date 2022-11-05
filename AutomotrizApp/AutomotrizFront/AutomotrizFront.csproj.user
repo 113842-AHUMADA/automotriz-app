@@ -16,7 +16,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Update="Reportes\DSListado.xsd">
+    <None Update="Reportes\DSProductosListado.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>

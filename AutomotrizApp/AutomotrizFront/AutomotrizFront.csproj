@@ -31,10 +31,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Reportes\DSListado.Designer.cs">
+    <Compile Update="Reportes\DSProductosListado.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>DSListado.xsd</DependentUpon>
+      <DependentUpon>DSProductosListado.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -46,9 +46,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Reportes\DSListado.xsd">
+    <None Update="Reportes\DSProductosListado.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DSListado.Designer.cs</LastGenOutput>
+      <LastGenOutput>DSProductosListado.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
 
