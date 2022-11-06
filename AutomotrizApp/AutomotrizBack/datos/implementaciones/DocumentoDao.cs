@@ -150,15 +150,10 @@ namespace AutomotrizApp.datos.implementaciones
             return respuesta;
         }
 
-        public List<Documento> GetDocumentosPorFiltro(DateTime desde, DateTime hasta, string cliente)
+        public List<Documento> GetDocumentosPorFiltro(List<Parametro> filtros)
         {
-            List<Documento> documentos = new List<Documento>();
-            string SP = "SP_CONSULTAR_DOCUMENTOS";
-            List<Parametro> lst = new List<Parametro>();
-            lst.Add(new Parametro("@fecha_desde", desde));
-            lst.Add(new Parametro("@fecha_hasta", hasta));
-            lst.Add(new Parametro("@cliente", cliente));
-            DataTable tabla = HelperDao.ObtenerInstancia().Consultar(SP, lst);
+            List<Documento> lstDocumentos = new List<Documento>();
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_CONSULTAR_DOCUMENTOS", filtros);
 
             foreach (DataRow fila in tabla.Rows)
             {
@@ -168,10 +163,10 @@ namespace AutomotrizApp.datos.implementaciones
                 documento.Cliente = fila["cliente"].ToString();
                 documento.Fecha_Documento = DateTime.Parse(fila["fecha_documento"].ToString());
                 documento.Fecha_Entrega = DateTime.Parse(fila["fecha_entrega"].ToString());
-                documentos.Add(documento);
+                lstDocumentos.Add(documento);
             }
 
-            return documentos;
+            return lstDocumentos;
 
         }
 

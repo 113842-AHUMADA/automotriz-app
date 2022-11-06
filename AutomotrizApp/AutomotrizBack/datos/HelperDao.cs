@@ -46,7 +46,7 @@ namespace AutomotrizApp.datos
             {
                 foreach (Parametro oParametro in values)
                 {
-                    cmd.Parameters.AddWithValue(oParametro.Clave, oParametro.Valor);
+                    cmd.Parameters.AddWithValue(oParametro.Clave, oParametro.Valor.ToString());
                 }
             }
             tabla.Load(cmd.ExecuteReader());

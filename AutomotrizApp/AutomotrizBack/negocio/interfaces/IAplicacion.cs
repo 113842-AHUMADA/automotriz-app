@@ -19,7 +19,7 @@ namespace AutomotrizBack.negocio.interfaces
 
         public bool BorrarDocumento(int id);
 
-        public List<Documento> ObtenerDocumentosPorFiltro(DateTime desde, DateTime hasta, string cliente);
+        public List<Documento> ObtenerDocumentosPorFiltro(List<Parametro> filtros);
 
         public Documento ObtenerDocumentoPorId(int id);
 

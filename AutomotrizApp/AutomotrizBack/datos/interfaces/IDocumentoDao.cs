@@ -1,4 +1,5 @@
 ﻿using AutomotrizApp.dominio;
+using AutomotrizBack.datos;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -16,7 +17,7 @@ namespace AutomotrizApp.datos.interfaces
 
         bool Delete(int id);
 
-        List<Documento> GetDocumentosPorFiltro(DateTime desde, DateTime hasta, string cliente);
+        List<Documento> GetDocumentosPorFiltro(List<Parametro> filtros);
         
         Documento GetDocumentoPorId(int id);
 

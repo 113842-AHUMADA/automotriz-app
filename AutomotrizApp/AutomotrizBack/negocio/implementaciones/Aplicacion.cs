@@ -45,9 +45,9 @@ namespace AutomotrizBack.negocio.implementaciones
             return documentoDao.Delete(id);
         }
 
-        public List<Documento> ObtenerDocumentosPorFiltro(DateTime desde, DateTime hasta, string cliente)
+        public List<Documento> ObtenerDocumentosPorFiltro(List<Parametro> filtros)
         {
-            return documentoDao.GetDocumentosPorFiltro(desde, hasta, cliente);
+            return documentoDao.GetDocumentosPorFiltro(filtros);
         }
 
         public Documento ObtenerDocumentoPorId(int id)
