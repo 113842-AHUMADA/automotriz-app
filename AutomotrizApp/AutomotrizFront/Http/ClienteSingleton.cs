@@ -35,13 +35,13 @@ namespace AutomotrizFront.Http
             return content;
         }
 
-        public async Task<loginDTO> PostAsync(string url, string data)
+        public async Task<LoginDTO> PostAsync(string url, string data)
         {
             StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
             var result = await client.PostAsync(url, content);
-            loginDTO response = new loginDTO();
+            LoginDTO response = new LoginDTO();
             
-            if (result.IsSuccessStatusCode) response = JsonConvert.DeserializeObject<loginDTO>(await result.Content.ReadAsStringAsync())!;
+            if (result.IsSuccessStatusCode) response = JsonConvert.DeserializeObject<LoginDTO>(await result.Content.ReadAsStringAsync())!;
             return response;
         }
 

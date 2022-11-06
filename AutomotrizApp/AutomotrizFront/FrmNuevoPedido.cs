@@ -16,8 +16,8 @@ namespace AutomotrizFront
 {
     public partial class FrmNuevoPedido : Form
     {
-        private loginDTO usuario_logueado;
-        public FrmNuevoPedido(loginDTO usuario)
+        private LoginDTO usuario_logueado;
+        public FrmNuevoPedido(LoginDTO usuario)
         {
             this.usuario_logueado = usuario;
             InitializeComponent();

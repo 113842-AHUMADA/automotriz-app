@@ -35,7 +35,7 @@ namespace AutomotrizFront
             {
                 MessageBox.Show("Debe indicar los valores de usuario y contraseña", "Complete los campos de acceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            loginDTO Usuario_logeado = new loginDTO();
+            LoginDTO Usuario_logeado = new LoginDTO();
             Usuario_logeado = await this.ConsultarIngreso();
             
 
@@ -57,7 +57,7 @@ namespace AutomotrizFront
 
         //http://localhost:5008/api/Login/ingresar?usuario=admin&password=admin
 
-        private async Task<loginDTO> ConsultarIngreso()
+        private async Task<LoginDTO> ConsultarIngreso()
         {
             List <Parametro> credenciales = new List<Parametro>();
             credenciales.Add(new Parametro("@usuario", txtUsuario.Text));

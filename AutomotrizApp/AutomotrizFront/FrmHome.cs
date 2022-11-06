@@ -4,8 +4,8 @@ namespace AutomotrizFront
 {
     public partial class FrmHome : Form
     {
-        private loginDTO usuario_logueado;
-        public FrmHome(loginDTO usuario)
+        private LoginDTO usuario_logueado;
+        public FrmHome(LoginDTO usuario)
         {
             this.usuario_logueado = usuario;
             this.Text = this.Text + usuario.nombreApellido;
