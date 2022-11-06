@@ -742,19 +742,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vaio\\.nuget\\packages\\": {}
+    "C:\\Users\\ahufe\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
+      "projectUniqueName": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
       "projectName": "AutomotrizWebAPI",
-      "projectPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
-      "packagesPath": "C:\\Users\\Vaio\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\obj\\",
+      "projectPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\AutomotrizWebAPI.csproj",
+      "packagesPath": "C:\\Users\\ahufe\\.nuget\\packages\\",
+      "outputPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizWebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vaio\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ahufe\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -768,8 +768,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
-              "projectPath": "C:\\Users\\Vaio\\Desktop\\Programacion_2021\\2ndo año\\Programación II\\Práctico final\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj"
+            "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj": {
+              "projectPath": "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizBack\\AutomotrizBack.csproj"
             }
           }
         }
@@ -812,7 +812,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
       }
     }
   }

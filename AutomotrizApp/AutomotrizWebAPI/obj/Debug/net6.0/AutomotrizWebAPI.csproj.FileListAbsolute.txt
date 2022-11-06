@@ -139,3 +139,4 @@ Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\Autom
 Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizWebAPI\obj\Debug\net6.0\AutomotrizWebAPI.genruntimeconfig.cache
 Z:\_PERSONAL\PROGRAMACION\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizWebAPI\obj\Debug\net6.0\ref\AutomotrizWebAPI.dll
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizWebAPI\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizWebAPI\bin\Debug\net6.0\Newtonsoft.Json.dll

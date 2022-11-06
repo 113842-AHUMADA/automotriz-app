@@ -1,4 +1,5 @@
-﻿using AutomotrizBack.negocio.implementaciones;
+﻿using AutomotrizApp.dominio;
+using AutomotrizBack.negocio.implementaciones;
 using AutomotrizBack.negocio.interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -33,9 +34,24 @@ namespace AutomotrizWebAPI.Controllers
         }
 
 
-        //
+        [HttpPost("crear")]
+        public IActionResult PostProducto(Producto oProducto)
+        {
+            try
+            {
+                if (oProducto == null)
+                    return BadRequest("Objeto Producto requerido");
+                else
+                    return Ok(app.CrearProducto(oProducto));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "No se pudo registrar correctamente.");
+            }
+        }
 
-        [HttpGet("reporte")]
+
+        [HttpGet("reporte/listado")]
         public IActionResult GetReporteProductosListado()
         {
 
