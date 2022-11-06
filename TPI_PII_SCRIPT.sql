@@ -1,6 +1,6 @@
 USE [master]
 GO
-/****** Object:  Database [AUTOMOTRIZPROG]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  Database [AUTOMOTRIZPROG]    Script Date: 6/11/2022 19:15:37 ******/
 CREATE DATABASE [AUTOMOTRIZPROG]
  CONTAINMENT = NONE
  ON  PRIMARY 
@@ -80,7 +80,7 @@ ALTER DATABASE [AUTOMOTRIZPROG] SET QUERY_STORE = OFF
 GO
 USE [AUTOMOTRIZPROG]
 GO
-/****** Object:  Table [dbo].[CREDENCIALES]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  Table [dbo].[CREDENCIALES]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -97,7 +97,7 @@ CREATE TABLE [dbo].[CREDENCIALES](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[DETALLES]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  Table [dbo].[DETALLES]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -114,7 +114,7 @@ CREATE TABLE [dbo].[DETALLES](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[DOCUMENTOS]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  Table [dbo].[DOCUMENTOS]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -133,7 +133,7 @@ CREATE TABLE [dbo].[DOCUMENTOS](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PERSONAL]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  Table [dbo].[PERSONAL]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -152,7 +152,7 @@ CREATE TABLE [dbo].[PERSONAL](
 )WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON, OPTIMIZE_FOR_SEQUENTIAL_KEY = OFF) ON [PRIMARY]
 ) ON [PRIMARY]
 GO
-/****** Object:  Table [dbo].[PRODUCTOS]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  Table [dbo].[PRODUCTOS]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -188,7 +188,7 @@ REFERENCES [dbo].[PRODUCTOS] ([id_producto])
 GO
 ALTER TABLE [dbo].[DETALLES] CHECK CONSTRAINT [fk_detalles_productos]
 GO
-/****** Object:  StoredProcedure [dbo].[SP_ACTUALIZAR_DOCUMENTOS]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  StoredProcedure [dbo].[SP_ACTUALIZAR_DOCUMENTOS]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -208,12 +208,12 @@ begin
 	where id_documento = @id_documento
 end;
 GO
-/****** Object:  StoredProcedure [dbo].[SP_CONSULTAR_DOCUMENTOS]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  StoredProcedure [dbo].[SP_CONSULTAR_DOCUMENTOS]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
 GO
-create procedure [dbo].[SP_CONSULTAR_DOCUMENTOS]
+CREATE procedure [dbo].[SP_CONSULTAR_DOCUMENTOS]
 	@fecha_desde datetime,
 	@fecha_hasta datetime,
 	@cliente varchar(255)
@@ -221,13 +221,12 @@ as
 begin
 	select * 
 	from documentos
-	where (@fecha_desde is null OR fecha_documento >= @fecha_desde)
-	and (@fecha_hasta is null OR fecha_documento <= @fecha_hasta)
-	and (@cliente is null OR cliente LIKE '%' + @cliente + '%')
-	and fecha_baja is null;
+	where fecha_baja is null and
+	(fecha_documento between @fecha_desde and @fecha_hasta)
+	and cliente LIKE '%' +@cliente+ '%'
 end;
 GO
-/****** Object:  StoredProcedure [dbo].[SP_CONSULTAR_DOCUMENTOS_CON_DETALLES]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  StoredProcedure [dbo].[SP_CONSULTAR_DOCUMENTOS_CON_DETALLES]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -242,7 +241,7 @@ begin
 	join documentos doc on d.id_documento = doc.id_documento
 end;
 GO
-/****** Object:  StoredProcedure [dbo].[SP_CONSULTAR_PRODUCTOS]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  StoredProcedure [dbo].[SP_CONSULTAR_PRODUCTOS]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -253,7 +252,7 @@ begin
 	select * from productos order by marca
 end;
 GO
-/****** Object:  StoredProcedure [dbo].[SP_ELIMINAR_DOCUMENTOS]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  StoredProcedure [dbo].[SP_ELIMINAR_DOCUMENTOS]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -266,7 +265,7 @@ begin
 	where @id_documento = id_documento
 end;
 GO
-/****** Object:  StoredProcedure [dbo].[SP_INGRESAR]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  StoredProcedure [dbo].[SP_INGRESAR]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -288,7 +287,7 @@ BEGIN
 
 END
 GO
-/****** Object:  StoredProcedure [dbo].[SP_INSERTAR_DETALLES]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  StoredProcedure [dbo].[SP_INSERTAR_DETALLES]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -305,7 +304,7 @@ begin
   
 end;
 GO
-/****** Object:  StoredProcedure [dbo].[SP_INSERTAR_DOCUMENTOS]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  StoredProcedure [dbo].[SP_INSERTAR_DOCUMENTOS]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -325,7 +324,7 @@ begin
 	set @id_documento = scope_identity()
 end;
 GO
-/****** Object:  StoredProcedure [dbo].[SP_INSERTAR_PRODUCTO]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  StoredProcedure [dbo].[SP_INSERTAR_PRODUCTO]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -346,7 +345,7 @@ insert into productos (marca, modelo, descripcion, color, anio, stock, stock_cri
 VALUES (@marca,@modelo,@descripcion,@color,@anio,@stock,@stock_critico,@precio_vta)
 end;
 GO
-/****** Object:  StoredProcedure [dbo].[SP_NOMBRE_EMPLEADO]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  StoredProcedure [dbo].[SP_NOMBRE_EMPLEADO]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -364,7 +363,7 @@ BEGIN
 	
 END
 GO
-/****** Object:  StoredProcedure [dbo].[SP_REPORTE_PRODUCTOS_AGRUPADO]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  StoredProcedure [dbo].[SP_REPORTE_PRODUCTOS_AGRUPADO]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
@@ -377,7 +376,7 @@ begin
 	from productos
 end;
 GO
-/****** Object:  StoredProcedure [dbo].[SP_REPORTE_PRODUCTOS_LISTADO]    Script Date: 6/11/2022 17:32:53 ******/
+/****** Object:  StoredProcedure [dbo].[SP_REPORTE_PRODUCTOS_LISTADO]    Script Date: 6/11/2022 19:15:37 ******/
 SET ANSI_NULLS ON
 GO
 SET QUOTED_IDENTIFIER ON
