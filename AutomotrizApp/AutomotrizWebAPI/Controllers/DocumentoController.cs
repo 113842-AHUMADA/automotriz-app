@@ -1,4 +1,5 @@
 ﻿using AutomotrizApp.dominio;
+using AutomotrizBack.datos;
 using AutomotrizBack.negocio.implementaciones;
 using AutomotrizBack.negocio.interfaces;
 using Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel;
@@ -17,13 +18,13 @@ namespace AutomotrizWebAPI.Controllers
         {
             app = new Aplicacion();
         }
-               
-        [HttpGet("consultar")]
-        public IActionResult GetDocumentos(DateTime desde, DateTime hasta, string cliente)
+
+        [HttpPost("consultar")]
+        public IActionResult PostDocumentos(List<Parametro> filtros)
         {
             try
             {
-                return Ok(app.ObtenerDocumentosPorFiltro(desde,hasta,cliente));
+                return Ok(app.ObtenerDocumentosPorFiltro(filtros));
             }
             catch (Exception ex)
             {
