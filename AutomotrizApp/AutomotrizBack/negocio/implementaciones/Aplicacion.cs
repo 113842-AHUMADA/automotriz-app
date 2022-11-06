@@ -63,6 +63,11 @@ namespace AutomotrizBack.negocio.implementaciones
             return productoDao.GetProductos();
         }
 
+        public bool CrearProducto(Producto oProducto)
+        {
+            return productoDao.CreateProducto(oProducto);
+        }
+
         public DataTable ObtenerReporteProductosListado()
         {
             return productoDao.GetReporteProductosListado();
@@ -77,10 +82,11 @@ namespace AutomotrizBack.negocio.implementaciones
         //  LOGIN
 
 
-        public loginDTO Login(List<Parametro> credenciales)
+        public LoginDTO Login(List<Parametro> credenciales)
         {
             return loginDao.Login(credenciales);  
         }
 
+        
     }
 }

@@ -13,6 +13,8 @@ namespace AutomotrizBack.datos.interfaces
     {
         List<Producto> GetProductos();
 
+        bool CreateProducto(Producto oProducto);
+
         DataTable GetReporteProductosListado();
 
         DataTable GetReporteProductos(DateTime desde, DateTime hasta);

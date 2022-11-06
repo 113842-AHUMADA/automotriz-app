@@ -27,8 +27,8 @@ namespace AutomotrizBack.negocio.interfaces
 
         public DataTable ObtenerReporteProductosListado();
 
-        public loginDTO Login(List<Parametro> credenciales);
+        public LoginDTO Login(List<Parametro> credenciales);
 
-
+        public bool CrearProducto(Producto oProducto);
     }
 }

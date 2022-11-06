@@ -12,10 +12,10 @@ namespace AutomotrizBack.datos.implementaciones
 {
     internal class LoginDao : ILoginDao
     {
-        public loginDTO Login(List<Parametro> credenciales)
+        public LoginDTO Login(List<Parametro> credenciales)
         {
 
-            loginDTO respuesta = new loginDTO();
+            LoginDTO respuesta = new LoginDTO();
             SqlConnection conexion = HelperDao.ObtenerInstancia().ObtenerConexion();
 
             try
@@ -30,7 +30,10 @@ namespace AutomotrizBack.datos.implementaciones
                 SqlCommand cmdLogin = new SqlCommand("SP_INGRESAR", conexion);
                 cmdLogin.CommandType = CommandType.StoredProcedure;
 
-                // Esto está de más, ya que en el front se controla que si o si se envín credenciales
+                // Lucas: Esto está de más, ya que en el front se controla que si o si se envín credenciales
+                // Fede: Entendido. Me parecio interesante dejarlo por el hecho que son proyectos independientes. Nada me asegura
+                //      que la persona que este haciendo la peticion, haya hecho las validaciones correctas. 
+                //      Aporta valor conceptual mas que funcional.
                 if (credenciales != null)
                 {
                     foreach (Parametro param in credenciales)

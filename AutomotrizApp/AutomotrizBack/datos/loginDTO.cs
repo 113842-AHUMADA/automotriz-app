@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AutomotrizBack.datos
 {
-    public class loginDTO
+    public class LoginDTO
     {
         public string privilegio { get; set; }
         public string nombreApellido { get; set; }

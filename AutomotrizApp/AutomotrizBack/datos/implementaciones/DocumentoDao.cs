@@ -28,9 +28,11 @@ namespace AutomotrizApp.datos.implementaciones
 
                 SqlCommand cmdMaestro = new SqlCommand("SP_INSERTAR_DOCUMENTOS", conexion, transaccion);
                 cmdMaestro.CommandType = CommandType.StoredProcedure;
-                cmdMaestro.Parameters.AddWithValue("@tipo_documento", "pedido");
-                cmdMaestro.Parameters.AddWithValue("@empleado", oPedido.Vendedor); 
-                cmdMaestro.Parameters.AddWithValue("@cliente", oPedido.Cliente);
+                cmdMaestro.Parameters.AddWithValue("@id", oPedido.Id_Documento); //Darle valor constante porque el id_documento de DB es identity
+                cmdMaestro.Parameters.AddWithValue("@tipo_documento", "pedido");         // hardcodeado
+                cmdMaestro.Parameters.AddWithValue("@vendedor", oPedido.Vendedor);      // hardcodeado
+                cmdMaestro.Parameters.AddWithValue("@cliente", oPedido.Cliente);       // hardcodeado
+                cmdMaestro.Parameters.AddWithValue("@fecha_documento", oPedido.Fecha_Documento);    // dia de hoy
                 cmdMaestro.Parameters.AddWithValue("@fecha_entrega", oPedido.Fecha_Entrega);
 
                 SqlParameter parametro = new SqlParameter("@id_documento", SqlDbType.Int);
@@ -44,7 +46,7 @@ namespace AutomotrizApp.datos.implementaciones
                 {
                     SqlCommand cmdDetalle = new SqlCommand("SP_INSERTAR_DETALLES", conexion, transaccion);
                     cmdDetalle.CommandType = CommandType.StoredProcedure;
-                    cmdDetalle.Parameters.AddWithValue("@id_pedido", idDocumento);
+                    cmdDetalle.Parameters.AddWithValue("@id_documento", idDocumento);
                     cmdDetalle.Parameters.AddWithValue("@id_producto", item.Producto.Id_Producto);
                     cmdDetalle.Parameters.AddWithValue("@precio_unitario", item.Producto.Precio_Vta);
                     cmdDetalle.Parameters.AddWithValue("@cantidad", item.Cantidad);
@@ -82,7 +84,7 @@ namespace AutomotrizApp.datos.implementaciones
                 SqlCommand cmdMaestro = new SqlCommand("SP_ACTUALIZAR_DOCUMENTOS", conexion, transaccion);
                 cmdMaestro.CommandType = CommandType.StoredProcedure;
                 cmdMaestro.Parameters.AddWithValue("@tipo_documento", "pedido");
-                cmdMaestro.Parameters.AddWithValue("@empleado", oPedido.Vendedor);
+                cmdMaestro.Parameters.AddWithValue("@vendedor", oPedido.Vendedor);
                 cmdMaestro.Parameters.AddWithValue("@cliente", oPedido.Cliente);
                 cmdMaestro.Parameters.AddWithValue("@fecha_entrega", oPedido.Fecha_Entrega);
 
@@ -122,10 +124,30 @@ namespace AutomotrizApp.datos.implementaciones
 
         public bool Delete(int id)
         {
-            string SP = "SP_ELIMINAR_DOCUMENTO";
-            List<Parametro> lst = new List<Parametro>();
-            bool eliminado = HelperDao.ObtenerInstancia().Ejecutar(SP, lst);
-            return eliminado;
+            bool respuesta;
+            SqlConnection conexion = HelperDao.ObtenerInstancia().ObtenerConexion();
+            try
+            {
+                conexion.Open();
+                SqlCommand cmd = new SqlCommand("SP_ELIMINAR_DOCUMENTOS", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id_documento",id);
+                cmd.ExecuteNonQuery();
+                respuesta = true;
+
+            }
+            catch (SqlException)
+            {
+                respuesta = false;
+
+            }
+            finally
+            {
+                if (conexion != null && conexion.State == ConnectionState.Open)
+                    conexion.Close();
+            }
+
+            return respuesta;
         }
 
         public List<Documento> GetDocumentosPorFiltro(DateTime desde, DateTime hasta, string cliente)
