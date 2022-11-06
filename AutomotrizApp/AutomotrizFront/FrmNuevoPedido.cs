@@ -1,4 +1,5 @@
 ﻿using AutomotrizApp.dominio;
+using AutomotrizBack.datos;
 using AutomotrizFront.Http;
 using Newtonsoft.Json;
 using System;
@@ -15,8 +16,10 @@ namespace AutomotrizFront
 {
     public partial class FrmNuevoPedido : Form
     {
-        public FrmNuevoPedido()
+        private loginDTO usuario_logueado;
+        public FrmNuevoPedido(loginDTO usuario)
         {
+            this.usuario_logueado = usuario;
             InitializeComponent();
         }
 

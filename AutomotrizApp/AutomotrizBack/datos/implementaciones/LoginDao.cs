@@ -12,10 +12,10 @@ namespace AutomotrizBack.datos.implementaciones
 {
     internal class LoginDao : ILoginDao
     {
-        public string Login(List<Parametro> credenciales)
+        public loginDTO Login(List<Parametro> credenciales)
         {
 
-            string respuesta;
+            loginDTO respuesta = new loginDTO();
             SqlConnection conexion = HelperDao.ObtenerInstancia().ObtenerConexion();
 
             try
@@ -30,6 +30,7 @@ namespace AutomotrizBack.datos.implementaciones
                 SqlCommand cmdLogin = new SqlCommand("SP_INGRESAR", conexion);
                 cmdLogin.CommandType = CommandType.StoredProcedure;
 
+                // Esto está de más, ya que en el front se controla que si o si se envín credenciales
                 if (credenciales != null)
                 {
                     foreach (Parametro param in credenciales)
@@ -38,21 +39,33 @@ namespace AutomotrizBack.datos.implementaciones
                     }
                 }
                 
-                SqlParameter parametro = new SqlParameter("@privilegio", SqlDbType.VarChar, 20);
-                parametro.Direction = ParameterDirection.Output;
-                cmdLogin.Parameters.Add(parametro);
+                SqlParameter paramPrivilegio = new SqlParameter("@privilegio", SqlDbType.VarChar, 20);
+                paramPrivilegio.Direction = ParameterDirection.Output;
+                cmdLogin.Parameters.Add(paramPrivilegio);
+
+                SqlParameter paramNombreApellido = new SqlParameter("@nombreApellido", SqlDbType.VarChar, 60);
+                paramNombreApellido.Direction = ParameterDirection.Output;
+                cmdLogin.Parameters.Add(paramNombreApellido);
+
+                SqlParameter paramIdCredencial = new SqlParameter("@Id_Credencial", SqlDbType.Int);
+                paramIdCredencial.Direction = ParameterDirection.Output;
+                cmdLogin.Parameters.Add(paramIdCredencial);
+
                 cmdLogin.ExecuteNonQuery();
 
-                if (parametro.Value.ToString() == "")
-                    respuesta = "Usuario Incorrecto";
+                if (paramPrivilegio.Value.ToString() == "")
+                    respuesta.privilegio = "Usuario Incorrecto";
                 else
                 {
-                    respuesta = parametro.Value.ToString()!;
+                    respuesta.privilegio = paramPrivilegio.Value.ToString()!;
+                    respuesta.nombreApellido = paramNombreApellido.Value.ToString()!;
+                    respuesta.id_credencial = Convert.ToInt32(paramIdCredencial.Value);
                 }
             }
             catch (SqlException ex)
             {
-                return "Ocurrió un error al conectarse a la base de datos. " + ex.Message;
+                respuesta.privilegio = "Ocurrió un error al conectarse a la base de datos. " + ex.Message;
+                return respuesta;
             }
             return respuesta;
         }

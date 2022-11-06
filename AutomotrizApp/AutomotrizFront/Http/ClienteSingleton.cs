@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AutomotrizBack.datos;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -33,12 +35,13 @@ namespace AutomotrizFront.Http
             return content;
         }
 
-        public async Task<string> PostAsync(string url, string data)
+        public async Task<loginDTO> PostAsync(string url, string data)
         {
             StringContent content = new StringContent(data, Encoding.UTF8, "application/json");
             var result = await client.PostAsync(url, content);
-            var response = "";
-            if (result.IsSuccessStatusCode) response = await result.Content.ReadAsStringAsync();
+            loginDTO response = new loginDTO();
+            
+            if (result.IsSuccessStatusCode) response = JsonConvert.DeserializeObject<loginDTO>(await result.Content.ReadAsStringAsync())!;
             return response;
         }
 

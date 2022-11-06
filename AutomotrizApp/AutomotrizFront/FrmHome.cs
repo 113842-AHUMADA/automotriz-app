@@ -1,20 +1,29 @@
+using AutomotrizBack.datos;
+
 namespace AutomotrizFront
 {
     public partial class FrmHome : Form
     {
-        public FrmHome()
+        private loginDTO usuario_logueado;
+        public FrmHome(loginDTO usuario)
         {
+            this.usuario_logueado = usuario;
+            this.Text = this.Text + usuario.nombreApellido;
             InitializeComponent();
         }
 
         private void FrmHome_Load(object sender, EventArgs e)
         {
-
+            if (usuario_logueado.privilegio != "administrador")
+            {
+                altaDeVehículoToolStripMenuItem.Enabled = false;
+                altaDeVehículoToolStripMenuItem.ToolTipText = "Este menú solo está disponible para supervisores";
+            }
         }
 
         private void nuevaOrdenDePedidoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmNuevoPedido nuevoPedido = new FrmNuevoPedido();
+            FrmNuevoPedido nuevoPedido = new FrmNuevoPedido(usuario_logueado);
             nuevoPedido.ShowDialog();
         }
 
@@ -39,6 +48,12 @@ namespace AutomotrizFront
         {
             FrmReporte stock_vehiculos = new FrmReporte();
             stock_vehiculos.ShowDialog();
+        }
+
+        private void altaDeVehículoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmVehiculo alta_vehiculo = new frmVehiculo();
+            alta_vehiculo.ShowDialog();
         }
     }
 }

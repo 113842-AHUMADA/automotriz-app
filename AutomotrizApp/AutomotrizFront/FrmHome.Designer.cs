@@ -35,9 +35,11 @@
             this.nuevaOrdenDePedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarOrdenDePedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.stockDeVehiculosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.acercaDeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.informaciónDeContactoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.stockDeVehiculosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.soporteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.altaDeVehículoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -45,6 +47,7 @@
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.salirToolStripMenuItem,
+            this.soporteToolStripMenuItem,
             this.ordenDePedidoToolStripMenuItem,
             this.reportesToolStripMenuItem,
             this.acercaDeToolStripMenuItem});
@@ -66,7 +69,7 @@
             // salirToolStripMenuItem1
             // 
             this.salirToolStripMenuItem1.Name = "salirToolStripMenuItem1";
-            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(96, 22);
+            this.salirToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
             this.salirToolStripMenuItem1.Text = "Salir";
             this.salirToolStripMenuItem1.Click += new System.EventHandler(this.salirToolStripMenuItem1_Click);
             // 
@@ -100,6 +103,13 @@
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(65, 20);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
+            // stockDeVehiculosToolStripMenuItem
+            // 
+            this.stockDeVehiculosToolStripMenuItem.Name = "stockDeVehiculosToolStripMenuItem";
+            this.stockDeVehiculosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stockDeVehiculosToolStripMenuItem.Text = "Stock de Vehiculos";
+            this.stockDeVehiculosToolStripMenuItem.Click += new System.EventHandler(this.stockDeVehiculosToolStripMenuItem_Click);
+            // 
             // acercaDeToolStripMenuItem
             // 
             this.acercaDeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -115,12 +125,22 @@
             this.informaciónDeContactoToolStripMenuItem.Text = "Información de contacto";
             this.informaciónDeContactoToolStripMenuItem.Click += new System.EventHandler(this.informaciónDeContactoToolStripMenuItem_Click);
             // 
-            // stockDeVehiculosToolStripMenuItem
+            // soporteToolStripMenuItem
             // 
-            this.stockDeVehiculosToolStripMenuItem.Name = "stockDeVehiculosToolStripMenuItem";
-            this.stockDeVehiculosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.stockDeVehiculosToolStripMenuItem.Text = "Stock de Vehiculos";
-            this.stockDeVehiculosToolStripMenuItem.Click += new System.EventHandler(this.stockDeVehiculosToolStripMenuItem_Click);
+            this.soporteToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.altaDeVehículoToolStripMenuItem});
+            this.soporteToolStripMenuItem.Name = "soporteToolStripMenuItem";
+            this.soporteToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
+            this.soporteToolStripMenuItem.Text = "Soporte";
+            // 
+            // altaDeVehículoToolStripMenuItem
+            // 
+            this.altaDeVehículoToolStripMenuItem.AutoToolTip = true;
+            this.altaDeVehículoToolStripMenuItem.Name = "altaDeVehículoToolStripMenuItem";
+            this.altaDeVehículoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.altaDeVehículoToolStripMenuItem.Text = "Alta de vehículo";
+            this.altaDeVehículoToolStripMenuItem.ToolTipText = "Este menú sólo está disponible para supervisores";
+            this.altaDeVehículoToolStripMenuItem.Click += new System.EventHandler(this.altaDeVehículoToolStripMenuItem_Click);
             // 
             // FrmHome
             // 
@@ -151,5 +171,7 @@
         private ToolStripMenuItem acercaDeToolStripMenuItem;
         private ToolStripMenuItem informaciónDeContactoToolStripMenuItem;
         private ToolStripMenuItem stockDeVehiculosToolStripMenuItem;
+        private ToolStripMenuItem soporteToolStripMenuItem;
+        private ToolStripMenuItem altaDeVehículoToolStripMenuItem;
     }
 }

@@ -8,7 +8,7 @@ namespace AutomotrizBack.datos.interfaces
 {
     interface ILoginDao
     {
-        string Login(List<Parametro> credenciales);
+        loginDTO Login(List<Parametro> credenciales);
 
     }
 }

@@ -35,9 +35,11 @@ namespace AutomotrizFront
             {
                 MessageBox.Show("Debe indicar los valores de usuario y contraseña", "Complete los campos de acceso", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            string nivelPrivilegio = await this.ConsultarIngreso();
+            loginDTO Usuario_logeado = new loginDTO();
+            Usuario_logeado = await this.ConsultarIngreso();
             
-            if (nivelPrivilegio == "Usuario Incorrecto")
+
+            if (Usuario_logeado.privilegio == "Usuario Incorrecto")
             {
                 MessageBox.Show("El usuario y/o contraseña no es válido.", "Credenciales incorrectas", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtUsuario.Clear();
@@ -46,7 +48,7 @@ namespace AutomotrizFront
             }
             else
             {
-                FrmHome home = new FrmHome();
+                FrmHome home = new FrmHome(Usuario_logeado);
                 this.Hide();
                 home.ShowDialog();
             }
@@ -54,7 +56,8 @@ namespace AutomotrizFront
 
 
         //http://localhost:5008/api/Login/ingresar?usuario=admin&password=admin
-        private async Task<string> ConsultarIngreso()
+
+        private async Task<loginDTO> ConsultarIngreso()
         {
             List <Parametro> credenciales = new List<Parametro>();
             credenciales.Add(new Parametro("@usuario", txtUsuario.Text));

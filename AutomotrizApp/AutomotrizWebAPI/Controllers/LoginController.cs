@@ -26,7 +26,7 @@ namespace AutomotrizWebAPI.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(500, "Error interno. Intente nuevamente");
+                return StatusCode(500, "Error interno: "+ex.Message+". Intente nuevamente");
             }
 
         }

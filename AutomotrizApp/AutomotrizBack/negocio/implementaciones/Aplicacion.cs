@@ -77,7 +77,7 @@ namespace AutomotrizBack.negocio.implementaciones
         //  LOGIN
 
 
-        public string Login(List<Parametro> credenciales)
+        public loginDTO Login(List<Parametro> credenciales)
         {
             return loginDao.Login(credenciales);  
         }
