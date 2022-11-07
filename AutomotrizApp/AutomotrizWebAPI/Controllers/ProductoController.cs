@@ -35,7 +35,7 @@ namespace AutomotrizWebAPI.Controllers
 
 
         [HttpPost("crear")]
-        public IActionResult PostProducto(Producto oProducto)
+        public IActionResult PostCrearProducto(Producto oProducto)
         {
             try
             {
@@ -68,6 +68,22 @@ namespace AutomotrizWebAPI.Controllers
                 return StatusCode(500, "Error interno. Intente nuevamente");
             }
 
+        }
+
+        [HttpPut("actualizar")]
+        public IActionResult PutActualizarProducto(Producto oProducto)
+        {
+            try
+            {
+                if (oProducto == null)
+                    return BadRequest("Objeto Pedido requerido");
+                else
+                    return Ok(app.ActualizarProducto(oProducto));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "No se pudo actualizar correctamente.");
+            }
         }
 
         [HttpDelete("eliminar")]
