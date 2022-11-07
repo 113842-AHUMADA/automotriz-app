@@ -32,5 +32,7 @@ namespace AutomotrizBack.negocio.interfaces
         public bool CrearProducto(Producto oProducto);
 
         public bool BorrarProducto(int id);
+
+        public bool ActualizarProducto(Producto oProducto);
     }
 }

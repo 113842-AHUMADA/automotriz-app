@@ -75,6 +75,45 @@ namespace AutomotrizBack.datos.implementaciones
         }
 
 
+        public bool UpdateProducto(Producto oProducto)
+        {
+            bool respuesta;
+            SqlConnection conexion = HelperDao.ObtenerInstancia().ObtenerConexion();
+
+            try
+            {
+                conexion.Open();
+
+                SqlCommand cmd = new SqlCommand("SP_ACTUALIZAR_PRODUCTOS", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id_producto", oProducto.Id_Producto); 
+                cmd.Parameters.AddWithValue("@marca", oProducto.Marca);
+                cmd.Parameters.AddWithValue("@modelo", oProducto.Modelo);
+                cmd.Parameters.AddWithValue("@descripcion", oProducto.Descripcion);
+                cmd.Parameters.AddWithValue("@color", oProducto.Color);
+                cmd.Parameters.AddWithValue("@anio", oProducto.Anio);
+                cmd.Parameters.AddWithValue("@stock", oProducto.Stock);
+                cmd.Parameters.AddWithValue("@stock_critico", oProducto.Stock_Critico);
+                cmd.Parameters.AddWithValue("@precio_vta", oProducto.Precio_Vta);
+
+                cmd.ExecuteNonQuery();
+
+                respuesta = true;
+            }
+            catch (SqlException)
+            {
+                respuesta = false;
+            }
+            finally
+            {
+                if (conexion != null && conexion.State == ConnectionState.Open)
+                    conexion.Close();
+            }
+            return respuesta;
+
+        }
+
+
         public bool DeleteProducto(int id)
         {
             bool respuesta;

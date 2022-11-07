@@ -68,6 +68,11 @@ namespace AutomotrizBack.negocio.implementaciones
             return productoDao.CreateProducto(oProducto);
         }
 
+        public bool ActualizarProducto(Producto oProducto)
+        {
+            return productoDao.UpdateProducto(oProducto);
+        }
+
         public bool BorrarProducto(int id)
         {
             return productoDao.DeleteProducto(id);
