@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.grupo_Nuevo_Presupuesto = new System.Windows.Forms.GroupBox();
+            this.txtMarca = new System.Windows.Forms.TextBox();
+            this.lblMarca = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dtpFechaEntrega = new System.Windows.Forms.DateTimePicker();
             this.txtEmpleado = new System.Windows.Forms.TextBox();
@@ -61,6 +63,8 @@
             // 
             // grupo_Nuevo_Presupuesto
             // 
+            this.grupo_Nuevo_Presupuesto.Controls.Add(this.txtMarca);
+            this.grupo_Nuevo_Presupuesto.Controls.Add(this.lblMarca);
             this.grupo_Nuevo_Presupuesto.Controls.Add(this.label1);
             this.grupo_Nuevo_Presupuesto.Controls.Add(this.dtpFechaEntrega);
             this.grupo_Nuevo_Presupuesto.Controls.Add(this.txtEmpleado);
@@ -89,6 +93,22 @@
             this.grupo_Nuevo_Presupuesto.TabStop = false;
             this.grupo_Nuevo_Presupuesto.Text = "Nuevo Pedido";
             this.grupo_Nuevo_Presupuesto.Enter += new System.EventHandler(this.grupo_Nuevo_Presupuesto_Enter);
+            // 
+            // txtMarca
+            // 
+            this.txtMarca.Location = new System.Drawing.Point(175, 189);
+            this.txtMarca.Name = "txtMarca";
+            this.txtMarca.Size = new System.Drawing.Size(100, 23);
+            this.txtMarca.TabIndex = 26;
+            // 
+            // lblMarca
+            // 
+            this.lblMarca.AutoSize = true;
+            this.lblMarca.Location = new System.Drawing.Point(129, 192);
+            this.lblMarca.Name = "lblMarca";
+            this.lblMarca.Size = new System.Drawing.Size(40, 15);
+            this.lblMarca.TabIndex = 25;
+            this.lblMarca.Text = "Marca";
             // 
             // label1
             // 
@@ -276,6 +296,7 @@
             this.cboProductos.Name = "cboProductos";
             this.cboProductos.Size = new System.Drawing.Size(226, 23);
             this.cboProductos.TabIndex = 12;
+            this.cboProductos.Leave += new System.EventHandler(this.cboProductos_Leave);
             // 
             // label10
             // 
@@ -370,5 +391,7 @@
         private Label label7;
         private Label label6;
         private Button btnAgregar;
+        private TextBox txtMarca;
+        private Label lblMarca;
     }
 }
