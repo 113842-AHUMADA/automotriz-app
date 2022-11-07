@@ -18,7 +18,7 @@ namespace AutomotrizApp.datos
 
         private HelperDao()
         {
-            conexion = new SqlConnection(AutomotrizBack.Properties.Resources.ConnectionStringFede);
+            conexion = new SqlConnection(AutomotrizBack.Properties.Resources.ConnectionStringLucas);
         }
 
         public static HelperDao ObtenerInstancia()
@@ -39,7 +39,12 @@ namespace AutomotrizApp.datos
         {
             DataTable tabla = new DataTable();
 
+            if (conexion.State == (System.Data.ConnectionState)1)
+            {
+                conexion.Close();
+            }
             conexion.Open();
+
             SqlCommand cmd = new SqlCommand(nombreSP, conexion);
             cmd.CommandType = CommandType.StoredProcedure;
             if (values != null)

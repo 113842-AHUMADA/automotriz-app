@@ -30,7 +30,7 @@ namespace AutomotrizFront
 
         private async Task CargarComboAsync()
         {
-            var result = await ClienteSingleton.ObtenerInstancia().GetAsync("http://localhost:5008/api/Documento/productos");
+            var result = await ClienteSingleton.ObtenerInstancia().GetAsync("http://localhost:5008/api/Producto/Consultar");
 
             List<Producto> lst = JsonConvert.DeserializeObject<List<Producto>>(result);
             cboProductos.DataSource = lst;

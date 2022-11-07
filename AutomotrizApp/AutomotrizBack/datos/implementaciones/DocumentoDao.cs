@@ -23,6 +23,10 @@ namespace AutomotrizApp.datos.implementaciones
 
             try
             {
+                if (conexion.State == (System.Data.ConnectionState)1)
+                {
+                    conexion.Close();
+                }
                 conexion.Open();
                 transaccion = conexion.BeginTransaction();
 

@@ -15,6 +15,12 @@ namespace AutomotrizBack.datos.implementaciones
     {
         public List<Producto> GetProductos()
         {
+            SqlConnection conexion = HelperDao.ObtenerInstancia().ObtenerConexion();
+            if (conexion.State == (System.Data.ConnectionState)1)
+            {
+                conexion.Close();
+            }
+            conexion.Open();
             List<Producto> lista = new List<Producto>();
             DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_CONSULTAR_PRODUCTOS", null);
 
