@@ -69,5 +69,26 @@ namespace AutomotrizWebAPI.Controllers
             }
 
         }
+
+        [HttpDelete("eliminar")]
+        public IActionResult DeleteProducto(int id)                         
+        {
+            try
+            {
+                if (id == 0)
+                    return BadRequest("Id es requerido");
+                else
+                    return Ok(app.BorrarProducto(id));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "No se pudo eliminar correctamente.");
+            }
+        }
+
+
+
+
+
     }
 }

@@ -49,6 +49,24 @@ namespace AutomotrizWebAPI.Controllers
             }
         }
 
+
+        [HttpPut("actualizar")]
+        public IActionResult PutActualizarDocumento(Documento oPedido)
+        {
+            try
+            {
+                if (oPedido == null)
+                    return BadRequest("Objeto Pedido requerido");
+                else
+                    return Ok(app.ActualizarDocumento(oPedido));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "No se pudo actualizar correctamente.");
+            }
+        }
+
+
         [HttpDelete("eliminar")]
         public IActionResult DeleteDocumento(int id)
         {
