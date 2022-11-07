@@ -1,6 +1,4 @@
-﻿using AutomotrizApp.dominio;
-using AutomotrizFront.Http;
-//using AutomotrizFront.Reportes.DSListadoTableAdapters;
+﻿using AutomotrizFront.Http;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -14,19 +12,19 @@ using System.Windows.Forms;
 
 namespace AutomotrizFront
 {
-    public partial class FrmReporte : Form
+    public partial class FrmReporteListado : Form
     {
-        public FrmReporte()
+        public FrmReporteListado()
         {
             InitializeComponent();
         }
 
-        private void FrmReporte_Load(object sender, EventArgs e)
+        private void ReporteListado_Load(object sender, EventArgs e)
         {
-             //reportViewer1.LocalReport.ReportEmbeddedResource = "AutomotrizFront.Reportes.ListadoProductos.rdlc";
             CargarReporteAsync();
-            
         }
+
+
 
         private async Task CargarReporteAsync()
         {
@@ -36,9 +34,5 @@ namespace AutomotrizFront
             reportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", dt));
             reportViewer1.RefreshReport();
         }
-
-
-
-
     }
 }

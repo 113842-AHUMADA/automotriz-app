@@ -175,7 +175,6 @@ C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\bin\
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\bin\Debug\net6.0-windows\tr\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\bin\Debug\net6.0-windows\zh-Hans\Microsoft.CodeAnalysis.VisualBasic.resources.dll
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\bin\Debug\net6.0-windows\zh-Hant\Microsoft.CodeAnalysis.VisualBasic.resources.dll
-C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.FrmReporte.resources
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.VisualBasic.dll
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\bin\Debug\net6.0-windows\Microsoft.ReportViewer.Common.dll
@@ -211,3 +210,4 @@ C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico fin
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.FrmReporte.resources
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.frmVehiculo.resources
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.frmVehiculo.resources
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.FrmReporteListado.resources

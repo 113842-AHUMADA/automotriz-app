@@ -47,7 +47,7 @@ namespace AutomotrizFront
 
         private void stockDeVehiculosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            FrmReporte stock_vehiculos = new FrmReporte();
+            FrmReporteListado stock_vehiculos = new FrmReporteListado();
             stock_vehiculos.ShowDialog();
         }
 

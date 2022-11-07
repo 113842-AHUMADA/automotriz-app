@@ -1,6 +1,6 @@
-﻿ namespace AutomotrizFront
+﻿namespace AutomotrizFront
 {
-    partial class FrmReporte
+    partial class FrmReporteListado
     {
         /// <summary>
         /// Required designer variable.
@@ -33,22 +33,25 @@
             // 
             // reportViewer1
             // 
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "AutomotrizFront.Reportes.ListadoProductos.rdlc";
-            this.reportViewer1.Location = new System.Drawing.Point(5, 5);
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "ReporteListado.rdlc";
+            this.reportViewer1.LocalReport.ReportPath = "C:\\AHUFEDE\\REPOSITORIOS GITHUB\\automotriz-app\\AutomotrizApp\\AutomotrizFront\\Repor" +
+    "tes\\ReporteListado.rdlc";
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "ReportViewer";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(816, 250);
+            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
             this.reportViewer1.TabIndex = 0;
             // 
-            // FrmReporte
+            // FrmReporteListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(829, 272);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "FrmReporte";
-            this.Text = "FrmReporte";
-            this.Load += new System.EventHandler(this.FrmReporte_Load);
+            this.Name = "FrmReporteListado";
+            this.Text = "ReporteListado";
+            this.Load += new System.EventHandler(this.ReporteListado_Load);
             this.ResumeLayout(false);
 
         }

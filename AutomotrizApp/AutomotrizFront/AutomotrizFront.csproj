@@ -9,14 +9,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Reportes\ListadoProductos.rdlc" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Reportes\ListadoProductos.rdlc" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="ReportViewerCore.WinForms" Version="15.1.17" />
   </ItemGroup>
@@ -31,10 +23,10 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Update="Reportes\DSProductosListado.Designer.cs">
+    <Compile Update="Reportes\DSProductos.Designer.cs">
       <DesignTime>True</DesignTime>
       <AutoGen>True</AutoGen>
-      <DependentUpon>DSProductosListado.xsd</DependentUpon>
+      <DependentUpon>DSProductos.xsd</DependentUpon>
     </Compile>
   </ItemGroup>
 
@@ -46,9 +38,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="Reportes\DSProductosListado.xsd">
+    <None Update="Reportes\DSProductos.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>DSProductosListado.Designer.cs</LastGenOutput>
+      <LastGenOutput>DSProductos.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
 

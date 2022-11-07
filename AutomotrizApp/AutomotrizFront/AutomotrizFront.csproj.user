@@ -11,15 +11,15 @@
     <Compile Update="FrmNuevoPedido.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="FrmReporte.cs">
+    <Compile Update="frmVehiculo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frmVehiculo.cs">
+    <Compile Update="FrmReporteListado.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Update="Reportes\DSProductosListado.xsd">
+    <None Update="Reportes\DSProductos.xsd">
       <SubType>Designer</SubType>
     </None>
   </ItemGroup>
