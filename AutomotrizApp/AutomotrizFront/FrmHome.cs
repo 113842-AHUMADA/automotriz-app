@@ -8,12 +8,13 @@ namespace AutomotrizFront
         public FrmHome(LoginDTO usuario)
         {
             this.usuario_logueado = usuario;
-            this.Text = this.Text + usuario.nombreApellido;
+            
             InitializeComponent();
         }
 
         private void FrmHome_Load(object sender, EventArgs e)
         {
+            this.Text = this.Text +" Usuario/a: "+ usuario_logueado.nombreApellido;
             if (usuario_logueado.privilegio != "administrador")
             {
                 altaDeVehículoToolStripMenuItem.Enabled = false;
