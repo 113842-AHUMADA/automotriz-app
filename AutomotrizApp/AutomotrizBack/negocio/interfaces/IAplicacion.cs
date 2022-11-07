@@ -30,5 +30,7 @@ namespace AutomotrizBack.negocio.interfaces
         public LoginDTO Login(List<Parametro> credenciales);
 
         public bool CrearProducto(Producto oProducto);
+
+        public bool BorrarProducto(int id);
     }
 }

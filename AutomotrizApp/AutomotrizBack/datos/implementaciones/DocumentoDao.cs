@@ -83,23 +83,18 @@ namespace AutomotrizApp.datos.implementaciones
 
                 SqlCommand cmdMaestro = new SqlCommand("SP_ACTUALIZAR_DOCUMENTOS", conexion, transaccion);
                 cmdMaestro.CommandType = CommandType.StoredProcedure;
-                cmdMaestro.Parameters.AddWithValue("@tipo_documento", "pedido");
+                cmdMaestro.Parameters.AddWithValue("@id_documento", oPedido.Id_Documento);
                 cmdMaestro.Parameters.AddWithValue("@vendedor", oPedido.Vendedor);
                 cmdMaestro.Parameters.AddWithValue("@cliente", oPedido.Cliente);
+                cmdMaestro.Parameters.AddWithValue("@fecha_documento", oPedido.Fecha_Documento);
                 cmdMaestro.Parameters.AddWithValue("@fecha_entrega", oPedido.Fecha_Entrega);
-
-                SqlParameter parametro = new SqlParameter("@id_documento", SqlDbType.Int);
-                parametro.Direction = ParameterDirection.Output;
-                cmdMaestro.Parameters.Add(parametro);
                 cmdMaestro.ExecuteNonQuery();
-
-                int idDocumento = Convert.ToInt32(parametro.Value);
 
                 foreach (Detalle item in oPedido.lstDetalle)
                 {
                     SqlCommand cmdDetalle = new SqlCommand("SP_INSERTAR_DETALLES", conexion, transaccion);
                     cmdDetalle.CommandType = CommandType.StoredProcedure;
-                    cmdDetalle.Parameters.AddWithValue("@id_documento", idDocumento);
+                    cmdDetalle.Parameters.AddWithValue("@id_documento", oPedido.Id_Documento);
                     cmdDetalle.Parameters.AddWithValue("@id_producto", item.Producto.Id_Producto);
                     cmdDetalle.Parameters.AddWithValue("@precio_unitario", item.Producto.Precio_Vta);
                     cmdDetalle.Parameters.AddWithValue("@cantidad", item.Cantidad);

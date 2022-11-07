@@ -15,6 +15,8 @@ namespace AutomotrizBack.datos.interfaces
 
         bool CreateProducto(Producto oProducto);
 
+        bool DeleteProducto(int id);
+
         DataTable GetReporteProductosListado();
 
         DataTable GetReporteProductos(DateTime desde, DateTime hasta);

@@ -74,6 +74,36 @@ namespace AutomotrizBack.datos.implementaciones
 
         }
 
+
+        public bool DeleteProducto(int id)
+        {
+            bool respuesta;
+            SqlConnection conexion = HelperDao.ObtenerInstancia().ObtenerConexion();
+            try
+            {
+                conexion.Open();
+                SqlCommand cmd = new SqlCommand("SP_ELIMINAR_PRODUCTOS", conexion);
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.Parameters.AddWithValue("@id_producto", id);
+                cmd.ExecuteNonQuery();
+                respuesta = true;
+
+            }
+            catch (SqlException)
+            {
+                respuesta = false;
+
+            }
+            finally
+            {
+                if (conexion != null && conexion.State == ConnectionState.Open)
+                    conexion.Close();
+            }
+
+            return respuesta;
+        }
+
+
         public DataTable GetReporteProductosListado()
         {
             DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_REPORTE_PRODUCTOS_LISTADO", null);
