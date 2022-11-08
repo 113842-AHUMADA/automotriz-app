@@ -155,22 +155,12 @@ namespace AutomotrizBack.datos.implementaciones
             return tabla;
         }
 
-        public DataTable GetReporteProductos(DateTime desde, DateTime hasta)
+        public DataTable GetReporteProductosAgrupado(List<Parametro> filtros)
         {
-            List<Parametro> lst = new List<Parametro>();
-            lst.Add(new Parametro("@fecha_desde", desde));
-            lst.Add(new Parametro("@fecha_hasta", hasta));
-            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_REPORTE_PRODUCTOS_AGRUPACION", lst);
+            
+            DataTable tabla = HelperDao.ObtenerInstancia().Consultar("SP_REPORTE_PRODUCTOS_AGRUPADO", filtros);
             return tabla;
         }
-
-
-
-
-
-
-
-
 
 
     }

@@ -23,7 +23,7 @@ namespace AutomotrizBack.negocio.interfaces
 
         public Documento ObtenerDocumentoPorId(int id);
 
-        public DataTable ObtenerReporteProductos(DateTime desde, DateTime hasta);
+        public DataTable ObtenerReporteProductosAgrupado(List<Parametro> filtros);
 
         public DataTable ObtenerReporteProductosListado();
 
