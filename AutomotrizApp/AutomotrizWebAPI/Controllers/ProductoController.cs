@@ -1,4 +1,5 @@
 ﻿using AutomotrizApp.dominio;
+using AutomotrizBack.datos;
 using AutomotrizBack.negocio.implementaciones;
 using AutomotrizBack.negocio.interfaces;
 using Microsoft.AspNetCore.Http;
@@ -49,26 +50,7 @@ namespace AutomotrizWebAPI.Controllers
                 return StatusCode(500, "No se pudo registrar correctamente.");
             }
         }
-
-
-        [HttpGet("reporte/listado")]
-        public IActionResult GetReporteProductosListado()
-        {
-
-            try
-            {
-                string JSONresult;
-                JSONresult = JsonConvert.SerializeObject(app.ObtenerReporteProductosListado());
-                
-                
-                return Ok(JSONresult);
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, "Error interno. Intente nuevamente");
-            }
-
-        }
+                  
 
         [HttpPut("actualizar")]
         public IActionResult PutActualizarProducto(Producto oProducto)
@@ -102,6 +84,45 @@ namespace AutomotrizWebAPI.Controllers
             }
         }
 
+
+        [HttpGet("reporte/listado")]
+        public IActionResult GetReporteProductosListado()
+        {
+
+            try
+            {
+                string JSONresult;
+                JSONresult = JsonConvert.SerializeObject(app.ObtenerReporteProductosListado());
+
+
+                return Ok(JSONresult);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno. Intente nuevamente");
+            }
+
+        }
+
+
+        [HttpPost("reporte/agrupado")]
+        public IActionResult PostReporteProductosAgrupado(List<Parametro> filtros)
+        {
+
+            try
+            {
+                string JSONresult;
+                JSONresult = JsonConvert.SerializeObject(app.ObtenerReporteProductosAgrupado(filtros));
+
+
+                return Ok(JSONresult);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno. Intente nuevamente");
+            }
+
+        }
 
 
 
