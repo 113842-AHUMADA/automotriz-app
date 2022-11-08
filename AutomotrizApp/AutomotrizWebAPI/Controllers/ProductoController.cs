@@ -68,7 +68,7 @@ namespace AutomotrizWebAPI.Controllers
             }
         }
 
-        [HttpDelete("eliminar")]
+        [HttpDelete("eliminar/{id}")]
         public IActionResult DeleteProducto(int id)                         
         {
             try
