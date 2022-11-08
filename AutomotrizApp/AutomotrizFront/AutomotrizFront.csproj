@@ -28,6 +28,11 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>DSProductos.xsd</DependentUpon>
     </Compile>
+    <Compile Update="Reportes\DSVentas.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DSVentas.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
@@ -41,6 +46,10 @@
     <None Update="Reportes\DSProductos.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DSProductos.Designer.cs</LastGenOutput>
+    </None>
+    <None Update="Reportes\DSVentas.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DSVentas.Designer.cs</LastGenOutput>
     </None>
   </ItemGroup>
 

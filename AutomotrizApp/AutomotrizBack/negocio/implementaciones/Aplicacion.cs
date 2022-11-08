@@ -83,9 +83,9 @@ namespace AutomotrizBack.negocio.implementaciones
             return productoDao.GetReporteProductosListado();
         }
 
-        public DataTable ObtenerReporteProductos(DateTime desde, DateTime hasta)
+        public DataTable ObtenerReporteProductosAgrupado(List<Parametro> filtros)
         {
-            return productoDao.GetReporteProductos(desde, hasta);
+            return productoDao.GetReporteProductosAgrupado(filtros);
         }
 
 

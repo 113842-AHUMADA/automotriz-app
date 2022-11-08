@@ -28,10 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmVehiculo
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(834, 494);
+            this.MaximumSize = new System.Drawing.Size(850, 533);
+            this.MinimumSize = new System.Drawing.Size(850, 533);
+            this.Name = "frmVehiculo";
             this.Text = "frmVehiculo";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

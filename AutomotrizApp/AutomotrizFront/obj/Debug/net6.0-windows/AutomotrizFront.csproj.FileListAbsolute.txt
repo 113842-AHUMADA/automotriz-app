@@ -210,4 +210,8 @@ C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico fin
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.frmVehiculo.resources
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.frmVehiculo.resources
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.FrmReporteListado.resources
+<<<<<<< HEAD
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.FrmReporteListado.resources
+=======
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.FrmReporteAgrupado.resources
+>>>>>>> 9695b69342eebaf168a586ea2def400db9ed7986

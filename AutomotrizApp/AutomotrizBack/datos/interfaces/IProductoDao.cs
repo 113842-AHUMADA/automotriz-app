@@ -21,7 +21,7 @@ namespace AutomotrizBack.datos.interfaces
 
         DataTable GetReporteProductosListado();
 
-        DataTable GetReporteProductos(DateTime desde, DateTime hasta);
+        DataTable GetReporteProductosAgrupado(List<Parametro> filtros);
 
     }
 }

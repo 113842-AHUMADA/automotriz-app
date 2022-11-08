@@ -56,5 +56,11 @@ namespace AutomotrizFront
             frmVehiculo alta_vehiculo = new frmVehiculo();
             alta_vehiculo.ShowDialog();
         }
+
+        private void ventasPorMarcaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmReporteAgrupado venta_por_marca = new FrmReporteAgrupado();
+            venta_por_marca.ShowDialog();
+        }
     }
 }
