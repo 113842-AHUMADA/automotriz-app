@@ -28,7 +28,7 @@ namespace AutomotrizFront
 
         private async Task CargarReporteAsync()
         {
-            var result = await ClienteSingleton.ObtenerInstancia().GetAsync("http://localhost:5008/api/Producto/consultar");
+            var result = await ClienteSingleton.ObtenerInstancia().GetAsync("http://localhost:5008/api/Producto/reporte/listado");
 
             DataTable dt = JsonConvert.DeserializeObject<DataTable>(result);
             reportViewer1.LocalReport.DataSources.Add(new Microsoft.Reporting.WinForms.ReportDataSource("DataSet1", dt));

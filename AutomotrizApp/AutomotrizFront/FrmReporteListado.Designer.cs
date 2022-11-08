@@ -40,16 +40,19 @@
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "ReportViewer";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(800, 450);
+            this.reportViewer1.Size = new System.Drawing.Size(834, 494);
             this.reportViewer1.TabIndex = 0;
             // 
             // FrmReporteListado
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(834, 494);
             this.Controls.Add(this.reportViewer1);
+            this.MaximumSize = new System.Drawing.Size(850, 533);
+            this.MinimumSize = new System.Drawing.Size(850, 533);
             this.Name = "FrmReporteListado";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ReporteListado";
             this.Load += new System.EventHandler(this.ReporteListado_Load);
             this.ResumeLayout(false);
