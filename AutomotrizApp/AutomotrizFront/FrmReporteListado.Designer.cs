@@ -53,7 +53,7 @@
             this.MinimumSize = new System.Drawing.Size(850, 533);
             this.Name = "FrmReporteListado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ReporteListado";
+            this.Text = "AUTOMOTRIZ APP - REPORTE VEHICULOS";
             this.Load += new System.EventHandler(this.ReporteListado_Load);
             this.ResumeLayout(false);
 

@@ -103,7 +103,7 @@
             this.Controls.Add(this.txtUsuario);
             this.Name = "FrmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Login ";
+            this.Text = "AUTOMOTRIZ APP - LOGIN";
             this.Load += new System.EventHandler(this.FrmLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -62,5 +62,11 @@ namespace AutomotrizFront
             FrmReporteAgrupado venta_por_marca = new FrmReporteAgrupado();
             venta_por_marca.ShowDialog();
         }
+
+        private void consultarOrdenDePedidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FrmConsultarPedido consultar_pedido = new FrmConsultarPedido();
+            consultar_pedido.ShowDialog();
+        }
     }
 }

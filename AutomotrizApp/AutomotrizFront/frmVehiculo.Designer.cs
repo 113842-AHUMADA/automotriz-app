@@ -38,7 +38,8 @@
             this.MaximumSize = new System.Drawing.Size(850, 533);
             this.MinimumSize = new System.Drawing.Size(850, 533);
             this.Name = "frmVehiculo";
-            this.Text = "frmVehiculo";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "AUTOMOTRIZ APP - VEHICULOS";
             this.ResumeLayout(false);
 
         }

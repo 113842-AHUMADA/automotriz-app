@@ -105,7 +105,7 @@
             this.MinimumSize = new System.Drawing.Size(850, 533);
             this.Name = "FrmReporteAgrupado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "FrmReporteAgrupado";
+            this.Text = "AUTOMOTRIZ APP - REPORTE VENTAS POR MARCA";
             this.Load += new System.EventHandler(this.FrmReporteAgrupado_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

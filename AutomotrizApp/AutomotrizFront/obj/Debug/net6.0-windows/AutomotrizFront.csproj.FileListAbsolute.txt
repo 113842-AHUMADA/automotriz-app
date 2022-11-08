@@ -63,3 +63,4 @@ C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.pdb
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.genruntimeconfig.cache
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\ref\AutomotrizFront.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.FrmConsultarPedido.resources
