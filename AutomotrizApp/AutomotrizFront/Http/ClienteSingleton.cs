@@ -44,6 +44,15 @@ namespace AutomotrizFront.Http
             if (result.IsSuccessStatusCode) response = JsonConvert.DeserializeObject<LoginDTO>(await result.Content.ReadAsStringAsync())!;
             return response;
         }
+        public async Task<string> PostAsyncDefault(string url, string data)
+        {
+            StringContent content = new StringContent(data, Encoding.UTF8, "application/json"); 
+            var result = await client.PostAsync(url, content);
+
+            var response = ""; 
+            if (result.IsSuccessStatusCode) response = await result.Content.ReadAsStringAsync(); 
+            return response;
+        }
 
         public async Task<string> DeleteAsync(string url)
         {
