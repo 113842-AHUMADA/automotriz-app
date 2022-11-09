@@ -1,0 +1,28 @@
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\bin\Debug\net6.0\AutomotrizBack.deps.json
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\bin\Debug\net6.0\AutomotrizBack.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\bin\Debug\net6.0\AutomotrizBack.pdb
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.AssemblyReference.cache
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.Properties.Resources.resources
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.GenerateResource.cache
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.GeneratedMSBuildEditorConfig.editorconfig
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.AssemblyInfoInputs.cache
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.AssemblyInfo.cs
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.CoreCompileInputs.cache
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\refint\AutomotrizBack.dll
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.pdb
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\ref\AutomotrizBack.dll
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\bin\Debug\net6.0\AutomotrizBack.deps.json
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\bin\Debug\net6.0\AutomotrizBack.dll
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\bin\Debug\net6.0\AutomotrizBack.pdb
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.AssemblyReference.cache
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.Properties.Resources.resources
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.GenerateResource.cache
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.AssemblyInfoInputs.cache
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.AssemblyInfo.cs
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.csproj.CoreCompileInputs.cache
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.dll
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\refint\AutomotrizBack.dll
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\AutomotrizBack.pdb
+C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizBack\obj\Debug\net6.0\ref\AutomotrizBack.dll
