@@ -5,10 +5,16 @@
     <Compile Update="FrmConsultarPedido.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FrmDetalleDocumento.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FrmHome.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FrmModificarPedido.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="FrmNuevoPedido.cs">

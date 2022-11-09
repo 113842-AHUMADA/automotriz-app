@@ -74,7 +74,7 @@
             this.btnIngresar.Location = new System.Drawing.Point(248, 98);
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(75, 23);
-            this.btnIngresar.TabIndex = 4;
+            this.btnIngresar.TabIndex = 2;
             this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
             this.btnIngresar.Click += new System.EventHandler(this.btnIngresar_Click);
@@ -85,7 +85,7 @@
             this.LinkLblOlvido.Location = new System.Drawing.Point(64, 98);
             this.LinkLblOlvido.Name = "LinkLblOlvido";
             this.LinkLblOlvido.Size = new System.Drawing.Size(128, 15);
-            this.LinkLblOlvido.TabIndex = 5;
+            this.LinkLblOlvido.TabIndex = 3;
             this.LinkLblOlvido.TabStop = true;
             this.LinkLblOlvido.Text = "¿Olvidó su contraseña?";
             this.LinkLblOlvido.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.LinkLblOlvido_LinkClicked);

@@ -186,7 +186,7 @@ namespace AutomotrizApp.datos.implementaciones
                     documento.Vendedor = fila["vendedor"].ToString();
                     documento.Cliente = fila["cliente"].ToString();
                     documento.Fecha_Documento = DateTime.Parse(fila["fecha_documento"].ToString());
-                    documento.Fecha_Documento = DateTime.Parse(fila["fecha_entrega"].ToString());
+                    documento.Fecha_Entrega = DateTime.Parse(fila["fecha_entrega"].ToString());
                     primero = false;
                 }
                 int id_producto = int.Parse(fila["id_producto"].ToString());

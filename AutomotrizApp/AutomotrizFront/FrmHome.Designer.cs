@@ -56,7 +56,7 @@
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 2, 0, 2);
             this.menuStrip1.Size = new System.Drawing.Size(834, 24);
-            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // salirToolStripMenuItem
@@ -103,14 +103,14 @@
             // nuevaOrdenDePedidoToolStripMenuItem
             // 
             this.nuevaOrdenDePedidoToolStripMenuItem.Name = "nuevaOrdenDePedidoToolStripMenuItem";
-            this.nuevaOrdenDePedidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.nuevaOrdenDePedidoToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.nuevaOrdenDePedidoToolStripMenuItem.Text = "Nuevo Pedido";
             this.nuevaOrdenDePedidoToolStripMenuItem.Click += new System.EventHandler(this.nuevaOrdenDePedidoToolStripMenuItem_Click);
             // 
             // consultarOrdenDePedidoToolStripMenuItem
             // 
             this.consultarOrdenDePedidoToolStripMenuItem.Name = "consultarOrdenDePedidoToolStripMenuItem";
-            this.consultarOrdenDePedidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.consultarOrdenDePedidoToolStripMenuItem.Size = new System.Drawing.Size(170, 22);
             this.consultarOrdenDePedidoToolStripMenuItem.Text = "Consultar Pedidos";
             this.consultarOrdenDePedidoToolStripMenuItem.Click += new System.EventHandler(this.consultarOrdenDePedidoToolStripMenuItem_Click);
             // 
@@ -126,14 +126,14 @@
             // stockDeVehiculosToolStripMenuItem
             // 
             this.stockDeVehiculosToolStripMenuItem.Name = "stockDeVehiculosToolStripMenuItem";
-            this.stockDeVehiculosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.stockDeVehiculosToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.stockDeVehiculosToolStripMenuItem.Text = "Stock de Vehiculos";
             this.stockDeVehiculosToolStripMenuItem.Click += new System.EventHandler(this.stockDeVehiculosToolStripMenuItem_Click);
             // 
             // ventasPorMarcaToolStripMenuItem
             // 
             this.ventasPorMarcaToolStripMenuItem.Name = "ventasPorMarcaToolStripMenuItem";
-            this.ventasPorMarcaToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.ventasPorMarcaToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
             this.ventasPorMarcaToolStripMenuItem.Text = "Ventas por Marca";
             this.ventasPorMarcaToolStripMenuItem.Click += new System.EventHandler(this.ventasPorMarcaToolStripMenuItem_Click);
             // 

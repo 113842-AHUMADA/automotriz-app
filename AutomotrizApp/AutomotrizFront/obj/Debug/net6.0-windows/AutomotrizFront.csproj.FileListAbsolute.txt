@@ -64,6 +64,7 @@ C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.genruntimeconfig.cache
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\ref\AutomotrizFront.dll
 C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.FrmConsultarPedido.resources
+<<<<<<< Updated upstream
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\bin\Debug\net6.0-windows\AutomotrizFront.exe
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\bin\Debug\net6.0-windows\AutomotrizFront.deps.json
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\bin\Debug\net6.0-windows\AutomotrizFront.runtimeconfig.json
@@ -130,3 +131,7 @@ C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico fin
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.pdb
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.genruntimeconfig.cache
 C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\ref\AutomotrizFront.dll
+=======
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.FrmModificarPedido.resources
+C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizFront\obj\Debug\net6.0-windows\AutomotrizFront.FrmDetalleDocumento.resources
+>>>>>>> Stashed changes

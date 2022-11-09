@@ -55,14 +55,16 @@
             // 
             // dtpDesde
             // 
-            this.dtpDesde.Location = new System.Drawing.Point(58, 47);
+            this.dtpDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpDesde.Location = new System.Drawing.Point(78, 47);
             this.dtpDesde.Name = "dtpDesde";
             this.dtpDesde.Size = new System.Drawing.Size(200, 23);
             this.dtpDesde.TabIndex = 0;
             // 
             // dtpHasta
             // 
-            this.dtpHasta.Location = new System.Drawing.Point(364, 47);
+            this.dtpHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpHasta.Location = new System.Drawing.Point(332, 47);
             this.dtpHasta.Name = "dtpHasta";
             this.dtpHasta.Size = new System.Drawing.Size(200, 23);
             this.dtpHasta.TabIndex = 1;
@@ -70,7 +72,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(116, 19);
+            this.label1.Location = new System.Drawing.Point(136, 19);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 15);
             this.label1.TabIndex = 2;
@@ -79,7 +81,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(433, 19);
+            this.label2.Location = new System.Drawing.Point(397, 19);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 15);
             this.label2.TabIndex = 3;
@@ -107,7 +109,7 @@
             this.btnConsultar.Location = new System.Drawing.Point(631, 65);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(142, 37);
-            this.btnConsultar.TabIndex = 6;
+            this.btnConsultar.TabIndex = 3;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
             this.btnConsultar.Click += new System.EventHandler(this.btnConsultar_Click);
@@ -115,7 +117,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(116, 106);
+            this.label3.Location = new System.Drawing.Point(159, 104);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(47, 15);
             this.label3.TabIndex = 5;
@@ -123,10 +125,10 @@
             // 
             // txtCliente
             // 
-            this.txtCliente.Location = new System.Drawing.Point(200, 103);
+            this.txtCliente.Location = new System.Drawing.Point(243, 101);
             this.txtCliente.Name = "txtCliente";
             this.txtCliente.Size = new System.Drawing.Size(225, 23);
-            this.txtCliente.TabIndex = 4;
+            this.txtCliente.TabIndex = 2;
             // 
             // groupBox2
             // 
@@ -218,6 +220,7 @@
             this.btnEditar.TabIndex = 2;
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = true;
+            this.btnEditar.Click += new System.EventHandler(this.btnEditar_Click);
             // 
             // btnEliminar
             // 

@@ -49,17 +49,19 @@
             // 
             // dtpFechaDesde
             // 
-            this.dtpFechaDesde.Location = new System.Drawing.Point(81, 49);
+            this.dtpFechaDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaDesde.Location = new System.Drawing.Point(81, 50);
             this.dtpFechaDesde.Name = "dtpFechaDesde";
             this.dtpFechaDesde.Size = new System.Drawing.Size(200, 23);
-            this.dtpFechaDesde.TabIndex = 1;
+            this.dtpFechaDesde.TabIndex = 0;
             // 
             // dtpFechaHasta
             // 
-            this.dtpFechaHasta.Location = new System.Drawing.Point(354, 49);
+            this.dtpFechaHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFechaHasta.Location = new System.Drawing.Point(354, 50);
             this.dtpFechaHasta.Name = "dtpFechaHasta";
             this.dtpFechaHasta.Size = new System.Drawing.Size(200, 23);
-            this.dtpFechaHasta.TabIndex = 2;
+            this.dtpFechaHasta.TabIndex = 1;
             // 
             // btnGenerar
             // 
@@ -67,7 +69,7 @@
             this.btnGenerar.Location = new System.Drawing.Point(657, 44);
             this.btnGenerar.Name = "btnGenerar";
             this.btnGenerar.Size = new System.Drawing.Size(134, 34);
-            this.btnGenerar.TabIndex = 3;
+            this.btnGenerar.TabIndex = 2;
             this.btnGenerar.Text = "Generar";
             this.btnGenerar.UseVisualStyleBackColor = true;
             this.btnGenerar.Click += new System.EventHandler(this.btnGenerar_Click);

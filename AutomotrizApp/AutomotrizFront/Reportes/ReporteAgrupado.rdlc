@@ -268,8 +268,8 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <DataSetName>DataSet2</DataSetName>
-            <Top>1.22941cm</Top>
-            <Left>2.35162cm</Left>
+            <Top>0.62087cm</Top>
+            <Left>3.93615cm</Left>
             <Height>1.8cm</Height>
             <Width>5cm</Width>
             <Style>
@@ -623,8 +623,8 @@
               </Style>
             </ChartNoDataMessage>
             <DataSetName>DataSet2</DataSetName>
-            <Top>1.22941cm</Top>
-            <Left>10.95058cm</Left>
+            <Top>0.62087cm</Top>
+            <Left>12.06183cm</Left>
             <Height>5cm</Height>
             <Width>7.5cm</Width>
             <ZIndex>1</ZIndex>
@@ -641,10 +641,10 @@
         <Height>2.76502in</Height>
         <Style />
       </Body>
-      <Width>8.14583in</Width>
+      <Width>9.0625in</Width>
       <Page>
         <PageHeader>
-          <Height>1.49263cm</Height>
+          <Height>1.5084cm</Height>
           <PrintOnFirstPage>true</PrintOnFirstPage>
           <PrintOnLastPage>true</PrintOnLastPage>
           <ReportItems>
@@ -669,7 +669,8 @@
                 </Paragraph>
               </Paragraphs>
               <rd:DefaultName>Textbox12</rd:DefaultName>
-              <Left>4.39886cm</Left>
+              <Top>0.03528cm</Top>
+              <Left>5.06032cm</Left>
               <Height>1.36729cm</Height>
               <Width>11.04604cm</Width>
               <Style>

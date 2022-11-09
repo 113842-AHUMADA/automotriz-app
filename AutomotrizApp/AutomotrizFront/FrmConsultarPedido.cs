@@ -60,6 +60,12 @@ namespace AutomotrizFront
 
         private async void btnConsultar_Click(object sender, EventArgs e)
         {
+            if(txtCliente.Text == "")
+            {
+                txtCliente.Text = " ";
+                //MessageBox.Show("Ingresa un filtro en Cliente", "Informacion", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                //return;
+            }
             dgvDocumentos.Rows.Clear();
             await CargarGridAsync();
         }
@@ -67,10 +73,13 @@ namespace AutomotrizFront
 
         private void dgvDocumentos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvDocumentos.CurrentCell.ColumnIndex == 7)
+            if (dgvDocumentos.CurrentCell.ColumnIndex == 6)
             {
-                int nro = int.Parse(dgvDocumentos.CurrentRow.Cells["col_"].Value.ToString());
-               // new FrmDetalleDocumento(nro, fabrica).ShowDialog();
+                int id = int.Parse(dgvDocumentos.CurrentRow.Cells["col_id"].Value.ToString());
+                //string cliente = dgvDocumentos.CurrentRow.Cells["col_cliente"].Value.ToString();
+                //string vendedor = dgvDocumentos.CurrentRow.Cells["col_vendedor"].Value.ToString();
+                //string fecha_entrega = dgvDocumentos.CurrentRow.Cells["col_fecha_entrega"].Value.ToString();
+                new FrmDetalleDocumento(id).ShowDialog();
             }
         }
 
@@ -103,6 +112,14 @@ namespace AutomotrizFront
 
                 }
             }
+        }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(dgvDocumentos.CurrentRow.Cells["col_id"].Value.ToString());
+            string cliente = dgvDocumentos.CurrentRow.Cells["col_cliente"].Value.ToString();
+            new FrmModificarPedido(id,cliente).ShowDialog();
+            this.btnConsultar_Click(null, null);
         }
     }
 }

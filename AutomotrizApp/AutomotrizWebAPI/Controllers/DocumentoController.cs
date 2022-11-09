@@ -33,6 +33,20 @@ namespace AutomotrizWebAPI.Controllers
 
         }
 
+        [HttpGet("consultar/{id}")]
+        public IActionResult GetDocumentosId(int id)
+        {
+            try
+            {
+                return Ok(app.ObtenerDocumentoPorId(id));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error interno. Intente nuevamente");
+            }
+
+        }
+
         [HttpPost("crear")]
         public IActionResult PostDocumento(Documento oPedido)
         {
