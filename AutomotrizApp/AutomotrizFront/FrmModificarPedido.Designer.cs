@@ -316,6 +316,7 @@
             this.cboProductos.Name = "cboProductos";
             this.cboProductos.Size = new System.Drawing.Size(226, 23);
             this.cboProductos.TabIndex = 2;
+            this.cboProductos.Leave += new System.EventHandler(this.cboProductos_Leave);
             // 
             // lblModelo
             // 

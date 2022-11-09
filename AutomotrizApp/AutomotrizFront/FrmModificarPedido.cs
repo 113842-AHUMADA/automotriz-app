@@ -45,7 +45,7 @@ namespace AutomotrizFront
         private async Task CargarComboAsync()
         {
             var result = await ClienteSingleton.ObtenerInstancia().GetAsync("http://localhost:5008/api/Producto/Consultar");
-            List<Producto> productos = JsonConvert.DeserializeObject<List<Producto>>(result);
+            productos = JsonConvert.DeserializeObject<List<Producto>>(result);
 
             cboProductos.DataSource = productos;
             cboProductos.DisplayMember = "Modelo";
@@ -110,7 +110,7 @@ namespace AutomotrizFront
         private async Task ActualizarDocumentoAsync()
         {
             
-            nuevo.Vendedor = txtCliente.Text;
+            nuevo.Vendedor = txtEmpleado.Text;
             nuevo.Fecha_Entrega = Convert.ToDateTime(dtpFechaEntrega.Text);
             nuevo.Fecha_Documento = DateTime.Today;
             string pedidoJSON = JsonConvert.SerializeObject(nuevo);
@@ -152,6 +152,14 @@ namespace AutomotrizFront
 
         }
 
-       
+        private void cboProductos_Leave(object sender, EventArgs e)
+        {
+            txtMarca.Text = productos[cboProductos.SelectedIndex].Marca;
+            txtCarroceria.Text = productos[cboProductos.SelectedIndex].Descripcion;
+            txtStock.Text = productos[cboProductos.SelectedIndex].Stock.ToString();
+            txtColor.Text = productos[cboProductos.SelectedIndex].Color;
+            txtAnio.Text = productos[cboProductos.SelectedIndex].Anio.ToString();
+            txtPrecio.Text = productos[cboProductos.SelectedIndex].Precio_Vta.ToString();
+        }
     }
 }
