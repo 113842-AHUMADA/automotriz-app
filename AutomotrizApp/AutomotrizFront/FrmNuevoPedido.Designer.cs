@@ -47,16 +47,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.btnEliminarTodo = new System.Windows.Forms.Button();
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
-            this.btnGrabar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
-            this.cboProductos = new System.Windows.Forms.ComboBox();
-            this.lblModelo = new System.Windows.Forms.Label();
-            this.txtCliente = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnAgregar = new System.Windows.Forms.Button();
             this.colIdProd = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colMarca = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colModelo = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -66,6 +57,13 @@
             this.colPrecioVta = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colAcciones = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnGrabar = new System.Windows.Forms.Button();
+            this.cboProductos = new System.Windows.Forms.ComboBox();
+            this.lblModelo = new System.Windows.Forms.Label();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.btnAgregar = new System.Windows.Forms.Button();
             this.grupo_Nuevo_Presupuesto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.SuspendLayout();
@@ -90,10 +88,8 @@
             this.grupo_Nuevo_Presupuesto.Controls.Add(this.label14);
             this.grupo_Nuevo_Presupuesto.Controls.Add(this.txtTotal);
             this.grupo_Nuevo_Presupuesto.Controls.Add(this.label12);
-            this.grupo_Nuevo_Presupuesto.Controls.Add(this.btnEliminarTodo);
             this.grupo_Nuevo_Presupuesto.Controls.Add(this.dgvDetalles);
             this.grupo_Nuevo_Presupuesto.Controls.Add(this.btnGrabar);
-            this.grupo_Nuevo_Presupuesto.Controls.Add(this.btnEliminar);
             this.grupo_Nuevo_Presupuesto.Controls.Add(this.cboProductos);
             this.grupo_Nuevo_Presupuesto.Controls.Add(this.lblModelo);
             this.grupo_Nuevo_Presupuesto.Controls.Add(this.txtCliente);
@@ -244,7 +240,7 @@
             // 
             // txtTotal
             // 
-            this.txtTotal.Location = new System.Drawing.Point(917, 255);
+            this.txtTotal.Location = new System.Drawing.Point(893, 254);
             this.txtTotal.Margin = new System.Windows.Forms.Padding(2);
             this.txtTotal.Name = "txtTotal";
             this.txtTotal.Size = new System.Drawing.Size(137, 23);
@@ -259,16 +255,6 @@
             this.label12.Size = new System.Drawing.Size(84, 15);
             this.label12.TabIndex = 18;
             this.label12.Text = "TOTAL:            $";
-            // 
-            // btnEliminarTodo
-            // 
-            this.btnEliminarTodo.Location = new System.Drawing.Point(436, 250);
-            this.btnEliminarTodo.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEliminarTodo.Name = "btnEliminarTodo";
-            this.btnEliminarTodo.Size = new System.Drawing.Size(110, 28);
-            this.btnEliminarTodo.TabIndex = 16;
-            this.btnEliminarTodo.Text = "Eliminar todo";
-            this.btnEliminarTodo.UseVisualStyleBackColor = true;
             // 
             // dgvDetalles
             // 
@@ -295,84 +281,6 @@
             this.dgvDetalles.TabIndex = 15;
             this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
             // 
-            // btnGrabar
-            // 
-            this.btnGrabar.Location = new System.Drawing.Point(930, 313);
-            this.btnGrabar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnGrabar.Name = "btnGrabar";
-            this.btnGrabar.Size = new System.Drawing.Size(125, 35);
-            this.btnGrabar.TabIndex = 0;
-            this.btnGrabar.Text = "Grabar";
-            this.btnGrabar.UseVisualStyleBackColor = true;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.Location = new System.Drawing.Point(350, 250);
-            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(70, 28);
-            this.btnEliminar.TabIndex = 1;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = true;
-            // 
-            // cboProductos
-            // 
-            this.cboProductos.FormattingEnabled = true;
-            this.cboProductos.Location = new System.Drawing.Point(89, 114);
-            this.cboProductos.Margin = new System.Windows.Forms.Padding(2);
-            this.cboProductos.Name = "cboProductos";
-            this.cboProductos.Size = new System.Drawing.Size(226, 23);
-            this.cboProductos.TabIndex = 12;
-            this.cboProductos.Leave += new System.EventHandler(this.cboProductos_Leave);
-            // 
-            // lblModelo
-            // 
-            this.lblModelo.AutoSize = true;
-            this.lblModelo.Location = new System.Drawing.Point(5, 116);
-            this.lblModelo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lblModelo.Name = "lblModelo";
-            this.lblModelo.Size = new System.Drawing.Size(48, 15);
-            this.lblModelo.TabIndex = 11;
-            this.lblModelo.Text = "Modelo";
-            // 
-            // txtCliente
-            // 
-            this.txtCliente.Location = new System.Drawing.Point(89, 75);
-            this.txtCliente.Margin = new System.Windows.Forms.Padding(2);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(226, 23);
-            this.txtCliente.TabIndex = 7;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(5, 67);
-            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 15);
-            this.label7.TabIndex = 6;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(5, 80);
-            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(47, 15);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "Cliente:";
-            // 
-            // btnAgregar
-            // 
-            this.btnAgregar.Location = new System.Drawing.Point(267, 270);
-            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(70, 28);
-            this.btnAgregar.TabIndex = 4;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = true;
-            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
-            // 
             // colIdProd
             // 
             this.colIdProd.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
@@ -381,7 +289,6 @@
             this.colIdProd.ReadOnly = true;
             this.colIdProd.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             this.colIdProd.Visible = false;
-            this.colIdProd.Width = 43;
             // 
             // colMarca
             // 
@@ -444,6 +351,75 @@
             this.colAcciones.Text = "Quitar";
             this.colAcciones.UseColumnTextForButtonValue = true;
             // 
+            // btnGrabar
+            // 
+            this.btnGrabar.Location = new System.Drawing.Point(930, 313);
+            this.btnGrabar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnGrabar.Name = "btnGrabar";
+            this.btnGrabar.Size = new System.Drawing.Size(125, 35);
+            this.btnGrabar.TabIndex = 0;
+            this.btnGrabar.Text = "Grabar";
+            this.btnGrabar.UseVisualStyleBackColor = true;
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
+            // 
+            // cboProductos
+            // 
+            this.cboProductos.FormattingEnabled = true;
+            this.cboProductos.Location = new System.Drawing.Point(89, 114);
+            this.cboProductos.Margin = new System.Windows.Forms.Padding(2);
+            this.cboProductos.Name = "cboProductos";
+            this.cboProductos.Size = new System.Drawing.Size(226, 23);
+            this.cboProductos.TabIndex = 12;
+            this.cboProductos.Leave += new System.EventHandler(this.cboProductos_Leave);
+            // 
+            // lblModelo
+            // 
+            this.lblModelo.AutoSize = true;
+            this.lblModelo.Location = new System.Drawing.Point(5, 116);
+            this.lblModelo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblModelo.Name = "lblModelo";
+            this.lblModelo.Size = new System.Drawing.Size(48, 15);
+            this.lblModelo.TabIndex = 11;
+            this.lblModelo.Text = "Modelo";
+            // 
+            // txtCliente
+            // 
+            this.txtCliente.Location = new System.Drawing.Point(89, 75);
+            this.txtCliente.Margin = new System.Windows.Forms.Padding(2);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(226, 23);
+            this.txtCliente.TabIndex = 7;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(5, 67);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 15);
+            this.label7.TabIndex = 6;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(5, 80);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 15);
+            this.label6.TabIndex = 5;
+            this.label6.Text = "Cliente:";
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.Location = new System.Drawing.Point(267, 270);
+            this.btnAgregar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(70, 28);
+            this.btnAgregar.TabIndex = 4;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
+            // 
             // FrmNuevoPedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -470,10 +446,8 @@
         private Label label14;
         private TextBox txtTotal;
         private Label label12;
-        private Button btnEliminarTodo;
         private DataGridView dgvDetalles;
         private Button btnGrabar;
-        private Button btnEliminar;
         private ComboBox cboProductos;
         private TextBox txtCliente;
         private Label label7;
