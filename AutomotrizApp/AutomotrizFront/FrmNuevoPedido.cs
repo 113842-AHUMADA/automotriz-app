@@ -191,7 +191,8 @@ namespace AutomotrizFront
                 Detalle detalleDocumento = new Detalle();
                 detalleDocumento.Cantidad = Convert.ToInt32(detalle.Cells[7].Value);
                 Producto prodDetalle = new();
-                prodDetalle.Id_Producto = 1;
+
+                prodDetalle.Id_Producto = (int)detalle.Cells[0].Value;
                 prodDetalle.Marca = detalle.Cells[1].Value.ToString();
                 prodDetalle.Modelo = detalle.Cells[2].Value.ToString();
                 prodDetalle.Descripcion = detalle.Cells[3].Value.ToString();
