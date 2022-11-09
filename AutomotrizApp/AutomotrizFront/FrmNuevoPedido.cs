@@ -46,34 +46,34 @@ namespace AutomotrizFront
             //List<Producto> lst = JsonConvert.DeserializeObject<List<Producto>>(result);
             productosCargados = JsonConvert.DeserializeObject<List<Producto>>(result);
 
-            
+
             cboProductos.DataSource = productosCargados;
             cboProductos.DisplayMember = "Modelo";
             cboProductos.ValueMember = "Id_producto";
 
-            
+
         }
 
         private void grupo_Nuevo_Presupuesto_Enter(object sender, EventArgs e)
         {
 
-            
+
         }
 
-        
+
 
         private void cboProductos_Leave(object sender, EventArgs e)
         {
-            
-            txtMarca.Text      = productosCargados[cboProductos.SelectedIndex].Marca;
+
+            txtMarca.Text = productosCargados[cboProductos.SelectedIndex].Marca;
             txtCarroceria.Text = productosCargados[cboProductos.SelectedIndex].Descripcion;
-            txtStock.Text      = productosCargados[cboProductos.SelectedIndex].Stock.ToString();
-            txtColor.Text      = productosCargados[cboProductos.SelectedIndex].Color;
-            txtAnio.Text       = productosCargados[cboProductos.SelectedIndex].Anio.ToString();
-            txtPrecio.Text     = productosCargados[cboProductos.SelectedIndex].Precio_Vta.ToString();
+            txtStock.Text = productosCargados[cboProductos.SelectedIndex].Stock.ToString();
+            txtColor.Text = productosCargados[cboProductos.SelectedIndex].Color;
+            txtAnio.Text = productosCargados[cboProductos.SelectedIndex].Anio.ToString();
+            txtPrecio.Text = productosCargados[cboProductos.SelectedIndex].Precio_Vta.ToString();
 
             var prueba = 2;
-            
+
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
@@ -106,11 +106,28 @@ namespace AutomotrizFront
                         return;
                     }
                 }
-            } else
-            {
-                dgvDetalles.Rows.Add(producto.Id_Producto,producto.Marca, producto.Modelo, producto.Descripcion, producto.Color, producto.Anio,producto.Precio_Vta, producto.Precio_Vta/producto.Precio_Vta);
             }
-            
+            else
+            {
+                dgvDetalles.Rows.Add(producto.Id_Producto, producto.Marca, producto.Modelo, producto.Descripcion, producto.Color, producto.Anio, producto.Precio_Vta, producto.Precio_Vta / producto.Precio_Vta);
+            }
+
+        }
+
+        private void dgvDetalles_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var na = dgvDetalles.CurrentCell;
+            if (e.ColumnIndex == 8)
+            {
+                if (dgvDetalles.CurrentRow.Cells[7].Value.ToString() == "1")
+                {
+                    dgvDetalles.Rows.RemoveAt(e.RowIndex);
+                    return;
+                }
+                string cantActual = dgvDetalles.CurrentRow.Cells[7].Value.ToString();
+                int cantNueva = Convert.ToInt32(cantActual) - 1;
+                dgvDetalles.CurrentRow.Cells[7].Value = cantNueva.ToString();
+            }
         }
     }
-}
+    }

@@ -293,6 +293,7 @@
             this.dgvDetalles.RowTemplate.Height = 24;
             this.dgvDetalles.Size = new System.Drawing.Size(716, 209);
             this.dgvDetalles.TabIndex = 15;
+            this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
             // 
             // btnGrabar
             // 
@@ -435,7 +436,7 @@
             // 
             // colAcciones
             // 
-            this.colAcciones.HeaderText = "";
+            this.colAcciones.HeaderText = "Acciones";
             this.colAcciones.Name = "colAcciones";
             this.colAcciones.ReadOnly = true;
             this.colAcciones.Resizable = System.Windows.Forms.DataGridViewTriState.True;
