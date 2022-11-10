@@ -4,7 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <BaseOutputPath>C:\Users\Vaio\Desktop\Programacion_2021\2ndo año\Programación II\Práctico final\automotriz-app\AutomotrizApp\AutomotrizWebAPI\bin</BaseOutputPath>
+    <BaseOutputPath>C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizWebAPI\bin</BaseOutputPath>
   </PropertyGroup>
 
   <ItemGroup>

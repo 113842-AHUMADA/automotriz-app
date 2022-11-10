@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNuevoPedido));
             this.grupo_Nuevo_Presupuesto = new System.Windows.Forms.GroupBox();
             this.txtAnio = new System.Windows.Forms.TextBox();
             this.lblCarroceria = new System.Windows.Forms.Label();
@@ -426,6 +427,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1137, 450);
             this.Controls.Add(this.grupo_Nuevo_Presupuesto);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmNuevoPedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "AUTOMOTRIZ APP";

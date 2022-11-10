@@ -41,7 +41,7 @@ namespace AutomotrizFront
 
             if (Usuario_logeado.privilegio == "Usuario Incorrecto")
             {
-                MessageBox.Show("El usuario y/o contraseña no es válido.", "Credenciales incorrectas", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("El usuario y/o contraseña no es válido.", "Credenciales incorrectas", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtUsuario.Clear();
                 txtPassword.Clear();
                 txtUsuario.Focus();

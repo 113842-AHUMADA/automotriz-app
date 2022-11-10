@@ -95,6 +95,10 @@ namespace AutomotrizFront
 
         private async void btnEliminar_Click(object sender, EventArgs e)
         {
+            if (dgvDocumentos.RowCount == 0)
+            {
+                return;
+            }
             if (MessageBox.Show("Seguro que desea quitar el presupuesto seleccionado?", "Confirmación", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 if (dgvDocumentos.CurrentRow != null)
@@ -116,10 +120,19 @@ namespace AutomotrizFront
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
+            if (dgvDocumentos.RowCount == 0)
+            {
+                return;
+            }    
             int id = int.Parse(dgvDocumentos.CurrentRow.Cells["col_id"].Value.ToString());
             string cliente = dgvDocumentos.CurrentRow.Cells["col_cliente"].Value.ToString();
             new FrmModificarPedido(id,cliente).ShowDialog();
             this.btnConsultar_Click(null, null);
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

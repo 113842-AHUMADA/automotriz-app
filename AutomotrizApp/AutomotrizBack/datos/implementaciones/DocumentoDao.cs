@@ -32,12 +32,12 @@ namespace AutomotrizApp.datos.implementaciones
 
                 SqlCommand cmdMaestro = new SqlCommand("SP_INSERTAR_DOCUMENTOS", conexion, transaccion);
                 cmdMaestro.CommandType = CommandType.StoredProcedure;
-                cmdMaestro.Parameters.AddWithValue("@id", oPedido.Id_Documento); //Darle valor constante porque el id_documento de DB es identity
-                cmdMaestro.Parameters.AddWithValue("@tipo_documento", "pedido");         // hardcodeado
-                cmdMaestro.Parameters.AddWithValue("@vendedor", oPedido.Vendedor);      // hardcodeado
-                cmdMaestro.Parameters.AddWithValue("@cliente", oPedido.Cliente);       // hardcodeado
-                cmdMaestro.Parameters.AddWithValue("@fecha_documento", oPedido.Fecha_Documento);    // dia de hoy
-                cmdMaestro.Parameters.AddWithValue("@fecha_entrega", oPedido.Fecha_Entrega);
+                cmdMaestro.Parameters.AddWithValue("@id", oPedido.Id_Documento); 
+                cmdMaestro.Parameters.AddWithValue("@tipo_documento", "pedido");         
+                cmdMaestro.Parameters.AddWithValue("@vendedor", oPedido.Vendedor);      
+                cmdMaestro.Parameters.AddWithValue("@cliente", oPedido.Cliente);       
+                cmdMaestro.Parameters.AddWithValue("@fecha_documento", oPedido.Fecha_Documento.ToShortDateString());    
+                cmdMaestro.Parameters.AddWithValue("@fecha_entrega", oPedido.Fecha_Entrega.ToShortDateString());
 
                 SqlParameter parametro = new SqlParameter("@id_documento", SqlDbType.Int);
                 parametro.Direction = ParameterDirection.Output;

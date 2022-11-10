@@ -84,7 +84,7 @@ namespace AutomotrizFront
 
              Detalle detalle = new Detalle(producto, cantidad);
              nuevo.AgregarDetalle(detalle);
-             dgvDetalles.Rows.Add(new object[] { producto.Id_Producto, producto.Marca, producto.Modelo, producto.Descripcion, producto.Color, producto.Anio, producto.Precio_Vta, producto.Precio_Vta });
+             dgvDetalles.Rows.Add(new object[] { producto.Id_Producto, producto.Marca, producto.Modelo, producto.Descripcion, producto.Color, producto.Anio, producto.Precio_Vta, detalle.Cantidad });
             
 
              CalcularTotal();
@@ -113,6 +113,7 @@ namespace AutomotrizFront
             nuevo.Vendedor = txtEmpleado.Text;
             nuevo.Fecha_Entrega = Convert.ToDateTime(dtpFechaEntrega.Text);
             nuevo.Fecha_Documento = DateTime.Today;
+            
             string pedidoJSON = JsonConvert.SerializeObject(nuevo);
 
             string url = "http://localhost:5008/api/Documento/actualizar";
@@ -125,7 +126,7 @@ namespace AutomotrizFront
             }
             else
             {
-                MessageBox.Show("ERROR. No se pudo registrar el presupuesto", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("ERROR. No se pudo registrar el pedido", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

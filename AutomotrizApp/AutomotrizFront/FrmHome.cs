@@ -20,6 +20,7 @@ namespace AutomotrizFront
                 altaDeVehículoToolStripMenuItem.Enabled = false;
                 altaDeVehículoToolStripMenuItem.ToolTipText = "Este menú solo está disponible para supervisores";
             }
+            
         }
 
         private void nuevaOrdenDePedidoToolStripMenuItem_Click(object sender, EventArgs e)

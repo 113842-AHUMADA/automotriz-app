@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmModificarPedido));
             this.txtAnio = new System.Windows.Forms.TextBox();
             this.lblCarroceria = new System.Windows.Forms.Label();
             this.txtCarroceria = new System.Windows.Forms.TextBox();
@@ -448,6 +449,7 @@
             this.Controls.Add(this.txtStock);
             this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.lblStock);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(850, 533);
             this.MinimumSize = new System.Drawing.Size(850, 533);
             this.Name = "FrmModificarPedido";

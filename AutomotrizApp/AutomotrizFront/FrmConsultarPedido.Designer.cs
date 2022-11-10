@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmConsultarPedido));
             this.dtpDesde = new System.Windows.Forms.DateTimePicker();
             this.dtpHasta = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -55,7 +56,6 @@
             // 
             // dtpDesde
             // 
-            this.dtpDesde.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpDesde.Location = new System.Drawing.Point(78, 47);
             this.dtpDesde.Name = "dtpDesde";
             this.dtpDesde.Size = new System.Drawing.Size(200, 23);
@@ -63,7 +63,6 @@
             // 
             // dtpHasta
             // 
-            this.dtpHasta.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpHasta.Location = new System.Drawing.Point(332, 47);
             this.dtpHasta.Name = "dtpHasta";
             this.dtpHasta.Size = new System.Drawing.Size(200, 23);
@@ -139,6 +138,7 @@
             this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Resultados";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // dgvDocumentos
             // 
@@ -254,6 +254,7 @@
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(850, 533);
             this.MinimumSize = new System.Drawing.Size(850, 533);
             this.Name = "FrmConsultarPedido";

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmDetalleDocumento));
             this.dgvDetalles = new System.Windows.Forms.DataGridView();
             this.col_id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.col_marca = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -242,6 +243,7 @@
             this.Controls.Add(this.txtCliente);
             this.Controls.Add(this.txtEmpleado);
             this.Controls.Add(this.dgvDetalles);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(850, 533);
             this.MinimumSize = new System.Drawing.Size(850, 533);
             this.Name = "FrmDetalleDocumento";
