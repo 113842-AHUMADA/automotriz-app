@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/fedahumada/automotriz-app/blob/main/utility/im
 
 
 * Se deberá cambiar el path `LocalReport` de los ReportViewer
-https://raw.githubusercontent.com/fedahumada/automotriz-app/blob/main/utility/img-report.jpg
+https://user-images.githubusercontent.com/img-report.jpg
 
 Luego de haber realizado estos pasos se podrá ejecutar la solución en modo `<Multiple Startup Proyects>`
 https://raw.githubusercontent.com/fedahumada/automotriz-app/blob/main/utility/img-prop-solucion.jpg
