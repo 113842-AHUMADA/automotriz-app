@@ -1,7 +1,7 @@
 # Automotriz App
 Proyecto final de la materia Programación II de la Universidad Tecnológica Nacional.
 
-#INFORMACIÓN DE USO - IMPORTANTE! >
+#INFORMACIÓN DE USO - IMPORTANTE! > 
 Luego de realizar el `git clone https://github.com/fedahumada/automotriz-app` deben seguir los siguientes pasos para su correcto funcionamiento:
 
 * Eliminar las carpetas carpetas `obj` de los tres proyectos. Estas se ubican en los siguientes path: 
