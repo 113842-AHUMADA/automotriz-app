@@ -14,7 +14,7 @@ Ej. `C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizWebAP
 
 <br> 
 * Se deberá cambiar el path `LocalReport` de los ReportViewer  
-* 
+
 [![img-report.jpg](https://i.postimg.cc/1ztNy2fv/img-report.jpg)](https://postimg.cc/k205cjNS)
 
 Luego de haber realizado estos pasos se podrá ejecutar la solución en modo `<Multiple Startup Proyects>` 
