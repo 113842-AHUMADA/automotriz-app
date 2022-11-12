@@ -1,8 +1,8 @@
 # Automotriz App
-## Proyecto final de la materia Programación II de la Universidad Tecnológica Nacional.
+Proyecto final de la materia Programación II de la Universidad Tecnológica Nacional.
 
 # INFORMACIÓN DE USO - IMPORTANTE! 
-## Luego de realizar el `git clone https://github.com/fedahumada/automotriz-app` deben seguir los siguientes pasos para su correcto funcionamiento:
+Luego de realizar el `git clone https://github.com/fedahumada/automotriz-app` deben seguir los siguientes pasos para su correcto funcionamiento:
 
 * Eliminar las carpetas carpetas `obj` de los tres proyectos. Estas se ubican en los siguientes path: 
     * `...\automotriz-app\AutomotrizApp\AutomotrizBack\obj`
@@ -10,7 +10,7 @@
     * `...\automotriz-app\AutomotrizApp\AutomotrizWebApi\obj`
 
 * Una vez dentro de la solución deben dirigirse a: `Propiedades del proyecto 'AutomotrizWebApi' / Build / Output / Base Output Path ` e indicar la ruta de la carpeta `bin` de dicho proyecto. Ej. `C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizWebAPI\bin`
-
+\n\
 [![img-webapi-path.jpg](https://i.postimg.cc/BvQ2Xtwc/img-webapi-path.jpg)](https://postimg.cc/zy6yQDNV)
 
 
@@ -25,8 +25,8 @@ Luego de haber realizado estos pasos se podrá ejecutar la solución en modo `<M
 
 
 # INFORMACIÓN
-## Aplicación creada completamente en .Net6
-## Los conocimientos aplicados a la sección "Reportes", fueron aprendidos gracias al repositorio: [CLick Aquí](https://github.com/AhmadKelany/ReportingInDotNet).
+Aplicación creada completamente en .Net6. 
+Los conocimientos aplicados a la sección "Reportes", fueron aprendidos gracias al repositorio: [CLick Aquí](https://github.com/AhmadKelany/ReportingInDotNet).
 Dar las gracias al autor de dicho repositorio, [Ahmad Kelany](https://github.com/AhmadKelany), visítenlo.
 
 # CONTRIBUIDORES 
