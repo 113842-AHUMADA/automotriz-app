@@ -19,7 +19,7 @@ Ej. `C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizWebAP
 
 # INFORMACIÓN
 Aplicación creada completamente en .Net6. <br> 
-Los conocimientos aplicados a la sección "Reportes", fueron aprendidos gracias al repositorio: [CLick Aquí](https://github.com/AhmadKelany/ReportingInDotNet). <br>  
+Los conocimientos aplicados a la sección "Reportes", fueron aprendidos gracias al repositorio: [Click Aquí](https://github.com/AhmadKelany/ReportingInDotNet). <br>  
 Dar las gracias al autor de dicho repositorio, [Ahmad Kelany](https://github.com/AhmadKelany), visítenlo.
 
 # CONTRIBUIDORES 
