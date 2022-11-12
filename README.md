@@ -10,15 +10,15 @@ Luego de realizar el `git clone https://github.com/fedahumada/automotriz-app` de
     * `...\automotriz-app\AutomotrizApp\AutomotrizWebApi\obj`
 
 * Una vez dentro de la solución deben dirigirse a: `Propiedades del proyecto 'AutomotrizWebApi' / Build / Output / Base Output Path ` e indicar la ruta de la carpeta `bin` de dicho proyecto. Ej. `C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizWebAPI\bin` 
-https://github.com/fedahumada/automotriz-app/blob/main/utility/img-webapi-path.jpg
+https://raw.githubusercontent.com/fedahumada/automotriz-app/blob/main/utility/img-webapi-path.jpg
 
 
 * Se deberá cambiar el path `LocalReport` de los ReportViewer
-https://github.com/fedahumada/automotriz-app/blob/main/utility/img-report.jpg
+https://raw.githubusercontent.com/fedahumada/automotriz-app/blob/main/utility/img-report.jpg
 
 Luego de haber realizado estos pasos se podrá ejecutar la solución en modo `<Multiple Startup Proyects>`
-https://github.com/fedahumada/automotriz-app/blob/main/utility/img-prop-solucion.jpg
-https://github.com/fedahumada/automotriz-app/blob/main/utility/img-multi.jpg
+https://raw.githubusercontent.com/fedahumada/automotriz-app/blob/main/utility/img-prop-solucion.jpg
+https://raw.githubusercontent.com/fedahumada/automotriz-app/main/utility/img-multi.jpg
 
 
 # INFORMACIÓN
