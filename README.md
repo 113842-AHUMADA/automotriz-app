@@ -1,7 +1,7 @@
 # Automotriz App
 Proyecto final de la materia Programación II de la Universidad Tecnológica Nacional.
 # INFORMACIÓN DE USO - IMPORTANTE! 
-Luego de realizar el `git clone https://github.com/fedahumada/automotriz-app` deben seguir los siguientes pasos para su correcto funcionamiento: 
+Luego de realizar el `git clone https://github.com/fedahumada/automotriz-app` deben seguir los siguientes pasos para su correcto funcionamiento: <br>  
 * Eliminar las carpetas carpetas `obj` de los tres proyectos. Estas se ubican en los siguientes path: 
     * `...\automotriz-app\AutomotrizApp\AutomotrizBack\obj`
     * `...\automotriz-app\AutomotrizApp\AutomotrizFront\obj`
@@ -12,16 +12,17 @@ Ej. `C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizWebAP
 
 [![img-webapi-path.jpg](https://i.postimg.cc/BvQ2Xtwc/img-webapi-path.jpg)](https://postimg.cc/zy6yQDNV)
 
-
-* Se deberá cambiar el path `LocalReport` de los ReportViewer 
+<br> 
+* Se deberá cambiar el path `LocalReport` de los ReportViewer <br> 
 [![img-report.jpg](https://i.postimg.cc/1ztNy2fv/img-report.jpg)](https://postimg.cc/k205cjNS)
-Luego de haber realizado estos pasos se podrá ejecutar la solución en modo `<Multiple Startup Proyects>` 
+<br> 
+Luego de haber realizado estos pasos se podrá ejecutar la solución en modo `<Multiple Startup Proyects>` <br>  
 [![img-prop-solucion.jpg](https://i.postimg.cc/RVB6WNW6/img-prop-solucion.jpg)](https://postimg.cc/9zLFSXtC)
 [![img-multi.jpg](https://i.postimg.cc/fLdyLNZf/img-multi.jpg)](https://postimg.cc/CBFSP9RR)
 
 
 # INFORMACIÓN
-Aplicación creada completamente en .Net6. 
+Aplicación creada completamente en .Net6. <br> 
 Los conocimientos aplicados a la sección "Reportes", fueron aprendidos gracias al repositorio: [CLick Aquí](https://github.com/AhmadKelany/ReportingInDotNet).
 Dar las gracias al autor de dicho repositorio, [Ahmad Kelany](https://github.com/AhmadKelany), visítenlo.
 
