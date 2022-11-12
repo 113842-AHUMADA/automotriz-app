@@ -7,7 +7,8 @@ Luego de realizar el `git clone https://github.com/fedahumada/automotriz-app` de
     * `...\automotriz-app\AutomotrizApp\AutomotrizFront\obj`
     * `...\automotriz-app\AutomotrizApp\AutomotrizWebApi\obj`
 
-* Una vez dentro de la solución deben dirigirse a: `Propiedades del proyecto 'AutomotrizWebApi' / Build / Output / Base Output Path ` e indicar la ruta de la carpeta `bin` de dicho proyecto. Ej. `C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizWebAPI\bin` <br> 
+* Una vez dentro de la solución deben dirigirse a: `Propiedades del proyecto 'AutomotrizWebApi' / Build / Output / Base Output Path ` e indicar la ruta de la carpeta `bin` de dicho proyecto. 
+Ej. `C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizWebAPI\bin` <br> 
 
 [![img-webapi-path.jpg](https://i.postimg.cc/BvQ2Xtwc/img-webapi-path.jpg)](https://postimg.cc/zy6yQDNV)
 
