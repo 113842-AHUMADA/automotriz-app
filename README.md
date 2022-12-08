@@ -1,5 +1,7 @@
 # Automotriz App
-Proyecto final de la materia Programación II de la Universidad Tecnológica Nacional.
+Proyecto final de la materia Programación II de la Universidad Tecnológica Nacional. <br> 
+Aplicación de escritorio para llevar registro de facturación de la empresa Automotriz. <br> 
+Aplicación creada completamente en .Net6, implementando APIs Rest y MS-SQL. <br> 
 # INFORMACIÓN DE USO - IMPORTANTE! 
 Luego de realizar el `git clone https://github.com/fedahumada/automotriz-app` deben seguir los siguientes pasos para su correcto funcionamiento: <br>  
 * Eliminar las carpetas carpetas `obj` de los tres proyectos. Estas se ubican en los siguientes path: 
@@ -18,7 +20,6 @@ Ej. `C:\AHUFEDE\REPOSITORIOS GITHUB\automotriz-app\AutomotrizApp\AutomotrizWebAP
 
 
 # INFORMACIÓN
-Aplicación creada completamente en .Net6. <br> 
 Los conocimientos aplicados a la sección "Reportes", fueron aprendidos gracias al repositorio: [Click Aquí](https://github.com/AhmadKelany/ReportingInDotNet). <br>  
 Dar las gracias al autor de dicho repositorio, [Ahmad Kelany](https://github.com/AhmadKelany), visítenlo.
 
